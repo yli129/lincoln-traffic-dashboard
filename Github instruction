@@ -1,0 +1,55 @@
+# GitHub Instructions
+
+## 1. Clone the Repository (First Time Only)
+
+1. Open our GitHub repository.
+2. Click the green **Code** button and copy the HTTPS URL.
+3. Open VS Code and open the terminal (`Ctrl + ~`).
+4. Run:
+
+```bash
+git clone <https://github.com/yli129/lincoln-traffic-dashboard.git>
+```
+
+5. Open the downloaded project folder in VS Code.
+
+**Note:** You only need to clone the repository once.
+
+## 2. Pull — Download the Latest Changes
+
+Before starting your work, run:
+
+```bash
+git pull
+```
+
+This downloads and merges the latest changes from GitHub into your local branch.
+
+## 3. Push — Upload Your Changes
+
+After finishing your work, run:
+
+```bash
+git add .
+git commit -m "Describe your changes"
+git push
+```
+
+- `git add .` — Stage your changes.
+- `git commit -m "..."` — Save your changes locally.
+- `git push` — Upload your commits to GitHub.
+
+## 4. Recommended Workflow
+
+Every time you work on the project:
+
+1. **Pull** the latest changes.
+2. **Edit** your code.
+3. **Test** your code.
+4. **Commit** your changes.
+5. **Push** your commits.
+
+**Important:**
+- Always pull before starting your work.
+- Try to work on separate files to avoid merge conflicts.
+- If you encounter a conflict or error, ask the team before overwriting anything.
