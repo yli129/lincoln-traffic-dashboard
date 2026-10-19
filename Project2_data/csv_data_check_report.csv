@@ -1,0 +1,11 @@
+File,Location,Sections,Expected_rows,Found_rows,Missing_time_bins,Duplicate_times,Invalid_times,Off_grid_times,Missing_values,Negative_values,Zero_Lights_Days,Status
+40th_Street_and_South_Street_Binned_20260909195458.csv,40th Street and South Street,7,57092,57092,0,0,0,0,0,0,0,GOOD
+40th_Street_and_South_Street_Binned_20260909200605.csv,40th Street and South Street,7,57120,57120,0,0,0,0,0,0,0,GOOD
+40th_Street_and_South_Street_Binned_20260909201423.csv,40th Street and South Street,7,57120,57120,0,0,0,0,0,0,0,GOOD
+40th_Street_and_South_Street_Binned_20260909202306.csv,40th Street and South Street,7,57148,57148,0,0,0,0,0,0,0,GOOD
+40th_Street_and_South_Street_Binned_20260909202816.csv,40th Street and South Street,7,16800,16800,0,0,0,0,0,0,0,GOOD
+South_Street_and_Normal_Boulevard_Binned_20260909204155.csv,South Street and Normal Boulevard,7,57092,57092,0,0,0,0,0,0,0,GOOD
+South_Street_and_Normal_Boulevard_Binned_20260909204441.csv,South Street and Normal Boulevard,7,57120,57120,0,0,0,0,0,0,0,GOOD
+South_Street_and_Normal_Boulevard_Binned_20260909204709.csv,South Street and Normal Boulevard,7,57120,57120,0,0,0,0,0,0,5,CHECK
+South_Street_and_Normal_Boulevard_Binned_20260909205026.csv,South Street and Normal Boulevard,7,57148,57148,0,0,0,0,0,0,0,GOOD
+South_Street_and_Normal_Boulevard_Binned_20260909205258.csv,South Street and Normal Boulevard,7,16800,16800,0,0,0,0,0,0,0,GOOD
