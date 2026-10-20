@@ -26,6 +26,7 @@ def check_csv(file_path):
         names=range(25),
         dtype=str,
     )
+    issues = []
 
     # Read file information from the first few rows.
     start = pd.to_datetime(raw.iloc[3, 1], utc=True)
@@ -68,17 +69,110 @@ def check_csv(file_path):
     valid = data.dropna(subset=["Time"])
     duplicates = valid.duplicated(["Section", "Time"]).sum()
     on_grid = valid["Time"].isin(expected_times)
+    # Record off-grid times
+    off_grid_rows = valid.index[~on_grid]
 
+    for idx in off_grid_rows:
+        issues.append({
+            "File": file_path.name,
+            "Section": data.loc[idx, "Section"],
+            "Time": data.loc[idx, "Time"],
+            "Row": idx,
+            "Column": 0,
+            "Issue": "Off-grid Time"
+        })
     unique_on_grid = valid.loc[
         on_grid, ["Section", "Time"]
     ].drop_duplicates()
+    # Record duplicate times
+    duplicate_rows = valid[
+        valid.duplicated(["Section", "Time"], keep=False)
+    ]
 
+    for idx, row in duplicate_rows.iterrows():
+        issues.append({
+            "File": file_path.name,
+            "Section": row["Section"],
+            "Time": row["Time"],
+            "Row": idx,
+            "Column": None,
+            "Issue": "Duplicate Time"
+        })
     missing_time_bins = expected_rows - len(unique_on_grid)
+    # Record missing time bins
+    for section in sections:
+        section_times = unique_on_grid.loc[
+            unique_on_grid["Section"] == section, "Time"
+        ]
+
+        missing_times = expected_times.difference(section_times)
+
+        for time in missing_times:
+            issues.append({
+                "File": file_path.name,
+                "Section": section,
+                "Time": time,
+                "Row": None,
+                "Column": None,
+                "Issue": "Missing Time Bin"
+            })
     off_grid_times = (~on_grid).sum()
     invalid_times = data["Time"].isna().sum()
+    # Record invalid times
+    invalid_rows = data.index[data["Time"].isna()]
+
+    for idx in invalid_rows:
+        issues.append({
+            "File": file_path.name,
+            "Section": data.loc[idx, "Section"],
+            "Time": data.loc[idx, 0],
+            "Row": idx,
+            "Column": 0,
+            "Issue": "Invalid Time"
+        })
     missing_values = values.isna().sum().sum()
+    # Record missing values
+    for col in count_columns:
+        missing_rows = values.index[values[col].isna()]
+
+        for idx in missing_rows:
+            issues.append({
+                "File": file_path.name,
+                "Section": data.loc[idx, "Section"],
+                "Time": data.loc[idx, "Time"],
+                "Row": idx,
+                "Column": col,
+                "Issue": "Missing Value"
+            })
     negative_values = (values < 0).sum().sum()
+    # Record negative values
+    for col in count_columns:
+        negative_rows = values.index[values[col] < 0]
+
+        for idx in negative_rows:
+            issues.append({
+                "File": file_path.name,
+                "Section": data.loc[idx, "Section"],
+                "Time": data.loc[idx, "Time"],
+                "Row": idx,
+                "Column": col,
+                "Issue": "Negative Value"
+            })
     sections_found = data["Section"].nunique()
+    # Record missing sections
+    found_sections = set(data["Section"].dropna())
+
+    missing_sections = set(sections) - found_sections
+
+    for section in missing_sections:
+        issues.append({
+            "File": file_path.name,
+            "Section": section,
+            "Time": None,
+            "Row": None,
+            "Column": None,
+            "Issue": "Missing Section"
+        })
 
     # Check days when all light-vehicle counts are zero.
     light_rows = data["Section"] == "Lights"
@@ -100,7 +194,18 @@ def check_csv(file_path):
 
     daily_light_total = light_data.groupby("Date")["Total"].sum()
     zero_light_days = (daily_light_total == 0).sum()
+    # Record zero-light days
+    zero_dates = daily_light_total.index[daily_light_total == 0]
 
+    for date in zero_dates:
+        issues.append({
+            "File": file_path.name,
+            "Section": "Lights",
+            "Time": date,
+            "Row": None,
+            "Column": None,
+            "Issue": "Zero Lights Day"
+        })
     # Decide whether this file needs attention.
     status = "GOOD"
 
@@ -116,7 +221,7 @@ def check_csv(file_path):
     ):
         status = "CHECK"
 
-    return {
+    summary = {
         "File": file_path.name,
         "Location": location,
         "Sections": sections_found,
@@ -132,13 +237,22 @@ def check_csv(file_path):
         "Status": status,
     }
 
+    issues_df = pd.DataFrame(
+        issues,
+        columns=["File", "Section", "Time", "Row", "Column", "Issue"]
+    )
+    return summary, issues_df
+
 
 # Find all original CSV files.
 # Do not check the report CSV created by this program.
 csv_files = sorted(
     file_path
     for file_path in data_folder.glob("*.csv")
-    if file_path.name != "csv_data_check_report.csv"
+    if file_path.name not in [
+        "csv_data_check_report.csv",
+        "csv_issues_report.csv"
+    ]
 )
 
 if len(csv_files) == 0:
@@ -146,11 +260,20 @@ if len(csv_files) == 0:
 
 # Check every CSV file.
 results = []
+all_issues = []
 
 for file_path in csv_files:
-    results.append(check_csv(file_path))
+    summary, issues_df = check_csv(file_path)
+
+    results.append(summary)
+    all_issues.append(issues_df)
 
 report = pd.DataFrame(results)
+
+issues_report = pd.concat(
+    all_issues,
+    ignore_index=True
+)
 
 # Print each CSV result clearly.
 print("\n" + "=" * 70)
@@ -198,9 +321,14 @@ if check_files > 0:
 else:
     print("\nAll CSV files passed the checks.")
 
-# Save the results as a CSV report.
+# Save summary report
 output = data_folder / "csv_data_check_report.csv"
 report.to_csv(output, index=False)
 
-print("\nReport saved as:")
+# Save detailed issues report
+issues_output = data_folder / "csv_issues_report.csv"
+issues_report.to_csv(issues_output, index=False)
+
+print("\nReports saved as:")
 print(output)
+print(issues_output)
