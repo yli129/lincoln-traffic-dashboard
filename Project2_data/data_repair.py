@@ -346,6 +346,28 @@ for file_path in csv_files:
 
     cleaned_data = cleaned_data[output_columns]
 
+    directions = [
+    "Southbound",
+    "Westbound",
+    "Northbound",
+    "Eastbound"
+    ]
+
+    movements = [
+        "Right", "Thru", "Left",
+        "U-Turn", "Peds CW", "Peds CCW"
+    ]
+    
+    feature_names = [
+        f"{direction}_{movement}"
+        for direction in directions
+        for movement in movements
+    ]
+
+    rename_map = dict(zip(range(1,25), feature_names))
+
+    cleaned_data = cleaned_data.rename(columns = rename_map)
+    
     # Save cleaned CSV
     output_path = output_folder / file_name
 
