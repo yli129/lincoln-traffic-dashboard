@@ -8,7 +8,7 @@
 4. Run:
 
 ```bash
-git clone <https://github.com/yli129/lincoln-traffic-dashboard.git>
+git clone https://github.com/yli129/lincoln-traffic-dashboard.git
 ```
 
 5. Open the downloaded project folder in VS Code.
