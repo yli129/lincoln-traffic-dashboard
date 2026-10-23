@@ -1,4 +1,4 @@
-Time,Section,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,Quality_Flag
+Time,Section,Southbound_Right,Southbound_Thru,Southbound_Left,Southbound_U-Turn,Southbound_Peds CW,Southbound_Peds CCW,Westbound_Right,Westbound_Thru,Westbound_Left,Westbound_U-Turn,Westbound_Peds CW,Westbound_Peds CCW,Northbound_Right,Northbound_Thru,Northbound_Left,Northbound_U-Turn,Northbound_Peds CW,Northbound_Peds CCW,Eastbound_Right,Eastbound_Thru,Eastbound_Left,Eastbound_U-Turn,Eastbound_Peds CW,Eastbound_Peds CCW,Quality_Flag
 2025-06-20 00:00:00 -0500,Lights,0,2,0,0,0,0,0,11,1,0,0,0,2,1,1,0,0,0,0,7,1,0,0,0,Valid
 2025-06-20 00:15:00 -0500,Lights,1,1,0,0,0,0,1,7,3,0,0,0,0,0,1,0,0,0,0,8,0,0,0,0,Valid
 2025-06-20 00:30:00 -0500,Lights,0,0,0,0,0,0,0,11,0,0,0,0,1,1,0,0,0,0,0,6,0,0,0,0,Valid

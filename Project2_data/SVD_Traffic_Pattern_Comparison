@@ -1,0 +1,168 @@
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+
+from pathlib import Path
+
+# Folder containing cleaned CSV files
+data_folder = Path(__file__).parent / "cleaned"
+
+def load_intersection(files, section):
+    dataframes = []
+    # Load all files which is belong to same intersection
+    for file in files:
+        df = pd.read_csv(file)
+
+        # Select target section
+        df = df[df["Section"] == section].copy()
+
+        # Keep only valid samples
+        df = df[df["Quality_Flag"] == "Valid"].copy()
+
+        # Select vehicle movements
+        movements = ["Right", "Thru", "Left", "U-Turn"]
+
+        vehicle_columns = [
+            col for col in df.columns
+            if col.split("_")[-1] in movements
+        ]
+        
+        # Calculate total vehicles per time interval
+        df["Total_Vehicles"] = df[vehicle_columns].sum(axis=1)
+
+        # Save the processed DataFrame
+        dataframes.append(df)
+
+    # Combine all CSV files vertically
+    combined = pd.concat(dataframes, ignore_index=True)
+
+    return combined
+
+def build_matrix(df):
+    data = df.copy()
+    # Extract local date and time slots
+    data["Date"] = data["Time"].str[:10]
+    data["Time_Slot"] = data["Time"].str[11:16]
+
+    # Check duplicate date/time slots
+    duplicates = data.duplicated(
+        subset=["Date", "Time_Slot"],
+        keep=False
+    )
+    if duplicates.any():
+        # Find dates containing duplicate time slots
+        duplicate_dates = data.loc[duplicates, "Date"].unique()
+
+        print("Duplicate dates:", duplicate_dates)
+
+        # Exclude these dates
+        data = data[~data["Date"].isin(duplicate_dates)].copy()
+
+    # Build Date × Time matrix
+    matrix = data.pivot(
+        index="Date",
+        columns="Time_Slot",
+        values="Total_Vehicles"
+    )
+
+    # Define all 96 expected time slots
+    time_slots = pd.date_range(
+        "00:00",
+        "23:45",
+        freq="15min"
+    ).strftime("%H:%M")
+
+    # Keep a consistent column order
+    matrix = matrix.reindex(columns=time_slots)
+
+    # Keep only complete days
+    matrix = matrix.dropna()
+
+    return matrix
+
+# Intersection A
+files_A = list(data_folder.glob(
+    "40th_Street_and_South_Street_Binned_*.csv"
+))
+
+# Intersection B
+files_B = list(data_folder.glob(
+    "South_Street_and_Normal_Boulevard_Binned_*.csv"
+))
+
+df_A = load_intersection(files_A, "Buses")
+df_B = load_intersection(files_B, "Buses")
+
+matrix_A = build_matrix(df_A)
+matrix_B = build_matrix(df_B)
+
+def run_svd(matrix_A, matrix_B):
+
+    # Align dates
+    A, B = matrix_A.align(
+        matrix_B,
+        join="inner",
+        axis=0
+    )
+
+    # Combine two intersections
+    combined = pd.concat(
+        [A, B],
+        axis=1,
+        keys=["Intersection A", "Intersection B"]
+    )
+
+    # Convert to numerical matrix
+    X = combined.to_numpy(dtype=float)
+
+    # Center each column
+    X_centered = X - X.mean(axis=0)
+
+    # Perform SVD
+    U, S, Vt = np.linalg.svd(
+        X_centered,
+        full_matrices=False
+    )
+    print("Combined:", combined.shape)
+    print("U:", U.shape)
+    print("S:", S.shape)
+    print("Vt:", Vt.shape)
+    return U, S, Vt, combined
+
+U, S, Vt, combined = run_svd(matrix_A, matrix_B)
+
+def plot_svd(Vt, combined, pattern_id):
+
+    # Select one pattern and restore column labels
+    pattern = pd.Series(
+        Vt[pattern_id],
+        index=combined.columns
+    )
+
+    # Extract two intersections
+    pattern_A = pattern["Intersection A"]
+    pattern_B = pattern["Intersection B"]
+    similarity = np.dot(pattern_A, pattern_B) / (
+    np.linalg.norm(pattern_A) *
+    np.linalg.norm(pattern_B)
+    )
+
+    print("Cosine Similarity:", similarity)
+    
+    # Plot both patterns
+    plt.figure(figsize=(12, 5))
+
+    plt.plot(pattern_A.index, pattern_A.values, label="Intersection A")
+    plt.plot(pattern_B.index, pattern_B.values, label="Intersection B")
+
+    plt.xlabel("Time of Day")
+    plt.ylabel("SVD Weight")
+    plt.title(f"SVD Pattern {pattern_id + 1}")
+
+    plt.xticks(range(0, 96, 8))
+    plt.legend()
+    plt.tight_layout()
+    plt.show()
+
+plot_svd(Vt, combined, pattern_id=0)
+
