@@ -75,81 +75,26 @@ def get_nearby_median(data, values, row, col, file_issues):
 
     return candidates.median()
 
-def repair_missing_value(raw, data, values, file_issues):
+def repair_numeric_value(raw, data, values, file_issues):
     cleaned = raw.copy()
 
-    # Find missing value issues
-    missing_issues = file_issues[
-        file_issues["Issue"] == "Missing Value"
+    numeric_issues = file_issues[
+        file_issues["Issue"].isin(
+            ["Missing Value", "Negative Value"]
+        )
     ]
 
-    for _, issue in missing_issues.iterrows():
+    for _, issue in numeric_issues.iterrows():
 
         row = int(issue["Row"])
         col = int(issue["Column"])
 
-        # Calculate median from nearby dates
         median_value = get_nearby_median(
             data, values, row, col, file_issues
         )
 
-        # Replace missing value
         if median_value is not None:
             cleaned.loc[row, col] = str(round(median_value))
-            
-            cleaned = add_quality_flag(
-                cleaned, row, "Imputed"
-            )
-    return cleaned
-
-def repair_negative_value(raw, data, values, file_issues):
-    cleaned = raw.copy()
-
-    negative_issues = file_issues[
-        file_issues["Issue"] == "Negative Value"
-    ]
-    for _, issue in negative_issues.iterrows():
-
-        row = int(issue["Row"])
-        col = int(issue["Column"])
-
-        # Calculate median from nearby dates
-        median_value = get_nearby_median(
-            data, values, row, col, file_issues
-        )
-
-        # Replace negative value
-        if median_value is not None:
-            cleaned.loc[row, col] = str(round(median_value))
-
-            cleaned = add_quality_flag(
-                cleaned, row, "Imputed"
-            )
-    return cleaned
-
-def repair_zero_lights_day(raw, data, values, file_issues):
-    cleaned = raw.copy()
-
-    zero_issues = file_issues[
-        file_issues["Issue"] == "Zero Lights Day"
-    ]
-    
-    local_dates = pd.to_datetime(
-        data[0].str.slice(0, 10),
-        errors="coerce"
-    ).dt.date
-    for _, issue in zero_issues.iterrows():
-
-        target_date = pd.to_datetime(issue["Time"]).date()
-
-        mask = local_dates == target_date
-
-        affected_rows = data.index[mask]
-
-        for row in affected_rows:
-            cleaned = add_quality_flag(
-                cleaned, row, "Zero Lights Day"
-            )
 
     return cleaned
 
@@ -189,49 +134,57 @@ def repair_duplicate_time(raw, data, values, file_issues):
 
     return cleaned
 
-def repair_invalid_time(raw, data, values, file_issues):
+def repair_flags(raw, data, file_issues):
     cleaned = raw.copy()
 
-    invalid_issues = file_issues[
-        file_issues["Issue"] == "Invalid Time"
+    flag_issues = file_issues[
+        file_issues["Issue"].isin([
+            "Zero Lights Day",
+            "Invalid Time",
+            "Off-grid Time"
+        ])
     ]
 
-    for _, issue in invalid_issues.iterrows():
-        row = int(issue["Row"])
+    local_dates = pd.to_datetime(
+        data[0].str.slice(0, 10),
+        errors="coerce"
+    ).dt.date
 
-        original_time = cleaned.loc[row, 0]
+    for _, issue in flag_issues.iterrows():
 
-        parsed_time = pd.to_datetime(
-            original_time,
-            errors="coerce",
-            utc=True
-        )
+        issue_type = issue["Issue"]
 
-        if pd.notna(parsed_time):
-            cleaned = add_quality_flag(
-                cleaned, row, "Time Needs Review"
+        if issue_type == "Zero Lights Day":
+            target_date = pd.to_datetime(issue["Time"]).date()
+            affected_rows = data.index[local_dates == target_date]
+
+            for row in affected_rows:
+                cleaned = add_quality_flag(
+                    cleaned, row, "Zero Lights Day"
+                )
+
+        elif issue_type == "Invalid Time":
+            row = int(issue["Row"])
+
+            parsed_time = pd.to_datetime(
+                cleaned.loc[row, 0],
+                errors="coerce",
+                utc=True
             )
-        else:
+
+            if pd.notna(parsed_time):
+                flag = "Time Needs Review"
+            else:
+                flag = "Invalid Time"
+
+            cleaned = add_quality_flag(cleaned, row, flag)
+
+        elif issue_type == "Off-grid Time":
+            row = int(issue["Row"])
+
             cleaned = add_quality_flag(
-                cleaned, row, "Invalid Time"
+                cleaned, row, "Off-grid Time"
             )
-
-    return cleaned
-
-def repair_off_grid_time(raw, data, values, file_issues):
-    cleaned = raw.copy()
-
-    off_grid_issues = file_issues[
-        file_issues["Issue"] == "Off-grid Time"
-    ]
-
-    for _, issue in off_grid_issues.iterrows():
-
-        row = int(issue["Row"])
-
-        cleaned = add_quality_flag(
-            cleaned, row, "Off-grid Time"
-        )
 
     return cleaned
 
@@ -305,25 +258,13 @@ for file_path in csv_files:
     cleaned["Quality_Flag"] = "Valid"
 
     # Repair numerical errors
-    cleaned = repair_missing_value(
-        cleaned, data, values, file_issues
-    )
-
-    cleaned = repair_negative_value(
+    cleaned = repair_numeric_value(
         cleaned, data, values, file_issues
     )
 
     # Flag abnormal 
-    cleaned = repair_zero_lights_day(
-        cleaned, data, values, file_issues
-    )
-
-    cleaned = repair_invalid_time(
-        cleaned, data, values, file_issues
-    )
-
-    cleaned = repair_off_grid_time(
-        cleaned, data, values, file_issues
+    cleaned = repair_flags(
+        cleaned, data, file_issues
     )
 
     cleaned = repair_duplicate_time(
