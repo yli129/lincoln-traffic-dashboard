@@ -5,7 +5,9 @@ data_folder = Path(__file__).parent
 
 # Read inspection results
 issues_df = pd.read_csv(
-    data_folder / "csv_issues_report.csv"
+    data_folder / "zero_check_status"
+    / "data_quality_reports"
+    / "csv_issues_report.csv"
 )
 
 def add_quality_flag(cleaned, row, flag):
@@ -50,7 +52,8 @@ def get_nearby_median(data, values, row, col, file_issues):
 
     # Get abnormal dates
     zero_days = file_issues.loc[
-        file_issues["Issue"] == "Zero Lights Day",
+        (file_issues["Issue"] == "All Zero Day")
+        & (file_issues["Section"] == target_section),
         "Time"
     ]
 
@@ -139,9 +142,10 @@ def repair_flags(raw, data, file_issues):
 
     flag_issues = file_issues[
         file_issues["Issue"].isin([
-            "Zero Lights Day",
+            "All Zero Day",
             "Invalid Time",
-            "Off-grid Time"
+            "Off-grid Time",
+            "Partial Zero"
         ])
     ]
 
@@ -154,14 +158,20 @@ def repair_flags(raw, data, file_issues):
 
         issue_type = issue["Issue"]
 
-        if issue_type == "Zero Lights Day":
+        if issue_type == "All Zero Day":
             target_date = pd.to_datetime(issue["Time"]).date()
-            affected_rows = data.index[local_dates == target_date]
-
+            affected_rows = data.index[
+                (local_dates == target_date)
+                & (data["Section"] == issue["Section"])
+            ]
             for row in affected_rows:
                 cleaned = add_quality_flag(
-                    cleaned, row, "Zero Lights Day"
+                    cleaned, row, "All Zero Day"
                 )
+        elif issue_type == "Partial Zero":
+            row = int(issue["Row"])
+
+            cleaned = add_quality_flag(cleaned, row, "Partial Zero")
 
         elif issue_type == "Invalid Time":
             row = int(issue["Row"])
