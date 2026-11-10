@@ -11,10 +11,6 @@ from traffic_utils import load_intersection
 DATA_FOLDER = Path(__file__).resolve().parent
 CLEANED_FOLDER = DATA_FOLDER / "cleaned"
 
-YEAR = 2025
-TIMEZONE = "America/Chicago"
-ERROR_THRESHOLD = 5.0
-
 MOTOR_SECTIONS = [
     "Lights",
     "Single-Unit Trucks",
@@ -24,8 +20,7 @@ MOTOR_SECTIONS = [
 ]
 
 def get_intersection_files():
-    """Find and group cleaned CSV files by intersection."""
-
+    # Find and group cleaned CSV files by intersection
     files = sorted(CLEANED_FOLDER.glob("*_Binned_*.csv"))
 
     intersection_files = {}
@@ -41,149 +36,93 @@ def get_intersection_files():
     return intersection_files
 
 
-def prepare_data(a_files, b_files):
-    """Load, aggregate, and align two intersections."""
+def prepare_data(a_files, b_files, section):
+    # Select sections based on user's choice
+    if section == "All Motor Vehicles":
+        sections = MOTOR_SECTIONS
+    else:
+        sections = [section]
+    # Load, aggregate, and align two intersections
+    a = load_intersection(a_files, sections)
+    b = load_intersection(b_files, sections)
+    #print(a.head())
+    #print(b.head())
 
-    def aggregate(files, name):
-        df = load_intersection(files, MOTOR_SECTIONS)
+    a["Time"] = pd.to_datetime(a["Time"], utc=True)
+    b["Time"] = pd.to_datetime(b["Time"], utc=True)
 
-        # Require all five valid sections at each timestamp
-        counts = df.groupby("Time").agg(
-            section_count=("Section", "nunique"),
-            row_count=("Section", "size"),
-            total=("Total_Vehicles", "sum")
-        )
+    # Aggregate traffic by time and section
+    a = a.groupby(["Time", "Section"])["Total_Vehicles"].sum().reset_index()
+    b = b.groupby(["Time", "Section"])["Total_Vehicles"].sum().reset_index()
+    #print(a.head())
+    #print(b.head())
+    # Combine and 
+    combined = pd.merge(a, b, on=["Time", "Section"], how="inner", suffixes=("_A", "_B"))
+    #print(combined.head())
+    #print(combined.shape)
 
-        valid = counts[
-            (counts["section_count"] == len(MOTOR_SECTIONS))
-            & (counts["row_count"] == len(MOTOR_SECTIONS))
-        ]
+    # Select different vehicle type based on user's choice
+    if section == "All Motor Vehicles":
+        # Count distinct sections at each timestamp
+        counts = combined.groupby("Time")["Section"].nunique()
 
-        return valid[["total"]].rename(
-            columns={"total": name}
-        )
+        # Find timestamps containing all five sections
+        valid_times = counts[counts == len(MOTOR_SECTIONS)].index
 
-    a = aggregate(a_files, "A")
-    b = aggregate(b_files, "B")
+        # Keep only complete timestamps
+        combined = combined[combined["Time"].isin(valid_times)]
 
-    # Match identical timestamps
-    combined = a.join(b, how="inner")
-    combined = combined.sort_index().reset_index()
+        selected = combined.groupby("Time")[["Total_Vehicles_A", "Total_Vehicles_B"]].sum().reset_index()
+    else:
+        selected = combined.copy()
 
-    combined["Time"] = pd.to_datetime(
-        combined["Time"],
-        utc=True
-    )
+    selected = selected.rename(columns={"Total_Vehicles_A": "A", "Total_Vehicles_B": "B"})
 
-    # Use Chicago local dates for annual analysis
-    local_time = combined["Time"].dt.tz_convert(TIMEZONE)
+    selected = selected.sort_values("Time").reset_index(drop=True)
 
-    combined = combined[
-        local_time.dt.year == YEAR
-    ].copy()
+    return selected 
 
-    combined["Date"] = (
-        combined["Time"]
-        .dt.tz_convert(TIMEZONE)
+def calculate_error_curve(selected):
+    a = selected["A"].to_numpy(dtype=float)
+    b = selected["B"].to_numpy(dtype=float)
+
+    n_max = len(selected["B"])
+    N = np.arange(1, n_max+1)
+
+    a_sum = np.cumsum(a)
+    b_sum = np.cumsum(b)
+    scale_factors = b_sum / a_sum 
+
+    # Convert UTC timestamps to local dates
+    selected = selected.copy()
+
+    selected["Date"] = (
+        selected["Time"]
+        .dt.tz_convert("America/Chicago")
         .dt.date
     )
 
-    # Require complete days for accurate daily totals
-    def expected_intervals(date):
-        start = pd.Timestamp(date).tz_localize(TIMEZONE)
-        end = (
-            pd.Timestamp(date) + pd.Timedelta(days=1)
-        ).tz_localize(TIMEZONE)
+    # Calculate daily volume 
+    daily = selected.groupby("Date")[["A","B"]].sum()
 
-        return int(
-            (end - start) / pd.Timedelta(minutes=15)
-        )
+    # Calculate actual average annual daily traffic volume in intersection B
+    actual_aadt = daily["B"].mean()
 
-    daily_counts = combined.groupby("Date").size()
+    # Calculate estimate average annual daily traffic volume in intersection B
+    estimated_aadt = scale_factors * daily["A"].mean()
 
-    complete_dates = [
-        date for date, count in daily_counts.items()
-        if count == expected_intervals(date)
-    ]
-
-    combined = combined[
-        combined["Date"].isin(complete_dates)
-    ].copy()
-
-    combined = combined.sort_values("Time").reset_index(drop=True)
-
-    if combined.empty:
-        raise ValueError("No complete shared traffic days found.")
-
-    return combined
-
-
-def calculate_error_curve(combined):
-    """Calculate estimation errors for N = 1 to Nmax."""
-
-    a = combined["A"].to_numpy(dtype=float)
-    b = combined["B"].to_numpy(dtype=float)
-
-    n_max = len(combined)
-    N = np.arange(1, n_max + 1)
-
-    # Cumulative traffic counts
-    a_cumsum = np.cumsum(a)
-    b_cumsum = np.cumsum(b)
-
-    # Calculate scale factors for every N
-    scale_factors = np.divide(
-        b_cumsum,
-        a_cumsum,
-        out=np.full(n_max, np.nan),
-        where=a_cumsum > 0
-    )
-
-    # Actual daily traffic
-    daily = combined.groupby("Date")[["A", "B"]].sum()
-
-    a_daily = daily["A"].to_numpy(dtype=float)
-    b_daily = daily["B"].to_numpy(dtype=float)
-
-    actual_aadt = b_daily.mean()
-
-    # Estimate annual average daily traffic
-    estimated_aadt = scale_factors * a_daily.mean()
-
-    aadt_error = (
-        np.abs(estimated_aadt - actual_aadt)
-        / actual_aadt * 100
-    )
-
-    # Calculate daily MAE in batches to save memory
-    daily_mae = np.full(n_max, np.nan)
-    batch_size = 1024
-
-    for start in range(0, n_max, batch_size):
-        end = min(start + batch_size, n_max)
-
-        factors = scale_factors[start:end]
-
-        predicted = factors[:, None] * a_daily[None, :]
-
-        errors = np.abs(predicted - b_daily[None, :])
-
-        daily_mae[start:end] = errors.mean(axis=1)
+    aadt_error = (np.abs(estimated_aadt -  actual_aadt)) / actual_aadt * 100
 
     results = pd.DataFrame({
         "N": N,
-        "Equivalent_Days": N / 96,
         "Scale_Factor": scale_factors,
         "Estimated_AADT": estimated_aadt,
-        "AADT_Error_Pct": aadt_error,
-        "Daily_MAE": daily_mae
+        "AADT_Error_Pct": aadt_error
     })
-
     return results
 
-
 def main():
-    # 1. Find intersections
+    # Find intersections
     intersection_files = get_intersection_files()
     names = list(intersection_files.keys())
 
@@ -196,7 +135,7 @@ def main():
     for i, name in enumerate(names, start=1):
         print(f"{i}. {name.replace('_', ' ')}")
 
-    # 2. Let user select reference and target
+    # Let user select reference and target
     try:
         a_index = int(input("\nSelect reference (A): ")) - 1
         b_index = int(input("Select target (B): ")) - 1
@@ -221,96 +160,62 @@ def main():
     a_files = intersection_files[a_name]
     b_files = intersection_files[b_name]
 
+    section_options = ["All Motor Vehicles"] + MOTOR_SECTIONS
+
+    for i, name in enumerate(section_options, 1):
+        print(f"{i}. {name}")
+
+    choice = int(input("Select a section: "))
+
+    section = section_options[choice - 1]
+
     print(f"\nReference: {a_name}")
     print(f"Target: {b_name}")
 
-    # 3. Prepare data
-    combined = prepare_data(a_files, b_files)
+    # Prepare data
+    combined = prepare_data(a_files, b_files, section)
 
-    print("Shared observations:", len(combined))
-    print("Complete days:", combined["Date"].nunique())
-
-    # 4. Calculate errors
+    # Calculate errors
     results = calculate_error_curve(combined)
 
-    # 5. Find the first N meeting the threshold
-    acceptable = results[
-        results["AADT_Error_Pct"] <= ERROR_THRESHOLD
-    ]
+    print(results.head())
+    print(results.shape)
 
-    if not acceptable.empty:
-        first = acceptable.iloc[0]
-
-        print(f"\nFirst result below {ERROR_THRESHOLD}%:")
-        print(f"N = {int(first['N'])}")
-        print(f"AADT error = {first['AADT_Error_Pct']:.2f}%")
-        print(f"Equivalent days = {first['Equivalent_Days']:.2f}")
-    else:
-        print("\nNo result meets the error threshold.")
-
-    # 6. Save results
-    safe_a = re.sub(r"\W+", "_", a_name)
-    safe_b = re.sub(r"\W+", "_", b_name)
-    output_name = f"error_curve_{safe_a}_to_{safe_b}"
-
+    # Save results
     results.to_csv(
-        DATA_FOLDER / f"{output_name}.csv",
+        DATA_FOLDER / "error_curve_results.csv",
         index=False
     )
 
-    # 7. Plot AADT Error Curve
-    plt.figure(figsize=(11, 5))
+    # Plot Error Curve
+    plt.figure(figsize=(10, 5))
 
     plt.plot(
         results["N"],
-        results["AADT_Error_Pct"],
-        linewidth=1,
-        label="AADT Error"
+        results["AADT_Error_Pct"]
     )
 
-    plt.axhline(
-        ERROR_THRESHOLD,
-        color="red",
-        linestyle="--",
-        label=f"{ERROR_THRESHOLD}% threshold"
-    )
+    for threshold, color in [(10, "red"), (5, "green")]:
+        acceptable = results[results["AADT_Error_Pct"] <= threshold]
 
-    plt.xlabel("Number of Observations (N)")
-    plt.ylabel("AADT Percent Error (%)")
-    plt.title("AADT Error vs. Number of Observations")
+        if not acceptable.empty:
+            n = int(acceptable.iloc[0]["N"])
+
+            plt.axvline(
+                x=n,
+                color=color,
+                linestyle=":",
+                label=f"{threshold}%: N={n}"
+            )
+
     plt.legend()
-    plt.grid(alpha=0.3)
-    plt.tight_layout()
-
-    plt.savefig(
-        DATA_FOLDER / f"{output_name}_aadt.png",
-        dpi=200
-    )
-
-    # 8. Plot Daily MAE Curve
-    plt.figure(figsize=(11, 5))
-
-    plt.plot(
-        results["N"],
-        results["Daily_MAE"],
-        linewidth=1
-    )
 
     plt.xlabel("Number of Observations (N)")
-    plt.ylabel("Daily MAE (vehicles/day)")
-    plt.title("Daily MAE vs. Number of Observations")
-    plt.grid(alpha=0.3)
-    plt.tight_layout()
-
-    plt.savefig(
-        DATA_FOLDER / f"{output_name}_mae.png",
-        dpi=200
-    )
+    plt.ylabel("AADT Error (%)")
+    plt.title("AADT Error vs. Observation Duration")
+    plt.grid(True)
 
     plt.show()
-
-    print("\nResults and charts saved successfully.")
-
 
 if __name__ == "__main__":
     main()
