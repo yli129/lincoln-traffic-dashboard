@@ -1,0 +1,3 @@
+Intersection,Year,Month,Movement,Trials,Mean_Absolute_Error_Percent,Median_Absolute_Error_Percent,Best_Absolute_Error_Percent,Worst_Absolute_Error_Percent,Mean_Signed_Error_Percent
+South Street and Normal Boulevard,2025,January,Right,1000,8.480352128013205,7.505645281461707,1.4133263029997343,21.719145814467968,3.3692461113467282
+South Street and Normal Boulevard,2025,January,Left,1000,7.392102706624527,7.921887873682669,0.9456584562033495,18.10032095820164,0.29622105534991683

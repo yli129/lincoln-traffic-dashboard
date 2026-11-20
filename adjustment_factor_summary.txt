@@ -1,0 +1,46 @@
+MONTHLY AND DAY-OF-WEEK ADJUSTMENT FACTORS
+================================================
+Dates included: 2025-01-01 through 2025-12-31
+Unique dates with data: 360
+Overall average daily traffic (reference AADT): 30,025.79
+Missing calendar dates within range: 5
+
+MONTHLY FACTORS
+Factor < 1.00: month is below the overall daily average.
+Factor > 1.00: month is above the overall daily average.
+AADT correction multiplier = 1 / adjustment factor.
+ Month_Number     Month Average_Daily_Traffic  Days_Observed Adjustment_Factor AADT_Correction_Multiplier Factor_Status
+            1   January             29,546.32             31            0.9840                     1.0162            OK
+            2  February             30,538.39             28            1.0171                     0.9832            OK
+            3     March             31,060.74             31            1.0345                     0.9667            OK
+            4     April             32,061.67             30            1.0678                     0.9365            OK
+            5       May             30,539.87             31            1.0171                     0.9832            OK
+            6      June             30,909.63             30            1.0294                     0.9714            OK
+            7      July             28,506.59             29            0.9494                     1.0533            OK
+            8    August             27,361.96             28            0.9113                     1.0974            OK
+            9 September             28,807.07             30            0.9594                     1.0423            OK
+           10   October             30,399.94             31            1.0125                     0.9877            OK
+           11  November             30,090.10             30            1.0021                     0.9979            OK
+           12  December             30,237.97             31            1.0071                     0.9930            OK
+
+DAY-OF-WEEK FACTORS
+ Day_Number Day_of_Week Average_Daily_Traffic  Days_Observed Adjustment_Factor AADT_Correction_Multiplier Factor_Status
+          0      Monday             31,016.00             52            1.0330                     0.9681            OK
+          1     Tuesday             32,587.81             52            1.0853                     0.9214            OK
+          2   Wednesday             32,458.06             52            1.0810                     0.9251            OK
+          3    Thursday             32,959.31             51            1.0977                     0.9110            OK
+          4      Friday             33,437.75             51            1.1136                     0.8980            OK
+          5    Saturday             25,279.80             51            0.8419                     1.1877            OK
+          6      Sunday             22,324.47             51            0.7435                     1.3450            OK
+
+HOW TO USE
+For a count taken in a known month: estimated AADT = count / that month's factor.
+For a count taken on a known weekday: estimated AADT = count / that weekday's factor.
+If both month and weekday are known, do not multiply these two factors blindly.
+Use a separately validated month-by-weekday model before combining them.
+
+IMPORTANT LIMITATION
+These factors are estimated from the dates in this input file. The file has
+one Actual_B value repeated across several estimation durations per date;
+the program uses one daily value per date. Factors from one year/location
+should be tested on other years/locations before being used citywide.

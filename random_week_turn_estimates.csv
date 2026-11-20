@@ -1,0 +1,2 @@
+Intersection,Year,Month,Week_Start,Week_End,Sample_Days,Actual_Monthly_Right,Estimated_Monthly_Right,Right_Signed_Error_Percent,Right_Absolute_Error_Percent,Actual_Monthly_Left,Estimated_Monthly_Left,Left_Signed_Error_Percent,Left_Absolute_Error_Percent
+South Street and Normal Boulevard,2025,January,2025-01-21,2025-01-27,7,12463.0,12076.714285714284,-3.0994601162297646,3.0994601162297646,11617.0,10566.571428571428,-9.04216726718234,9.04216726718234
