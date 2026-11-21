@@ -1,13 +1,12 @@
 from pathlib import Path
 import pandas as pd
 
-data_folder = Path(__file__).parent
+data_folder = Path(__file__).resolve().parent.parent
+raw_data_folder = data_folder / "raw_data"
 
 # Read inspection results
 issues_df = pd.read_csv(
-    data_folder / "zero_check_status"
-    / "data_quality_reports"
-    / "csv_issues_report.csv"
+    data_folder / "outputs" / "csv_issues_report.csv"
 )
 
 def add_quality_flag(cleaned, row, flag):
@@ -198,12 +197,12 @@ def repair_flags(raw, data, file_issues):
 
     return cleaned
 
-output_folder = data_folder / "cleaned"
+output_folder = data_folder / "cleaned_data"
 output_folder.mkdir(exist_ok=True)
 
 # Repair each file with issues
 csv_files = [
-    p for p in data_folder.glob("*.csv")
+    p for p in raw_data_folder.glob("*.csv")
     if p.name not in [
         "csv_issues_report.csv",
         "csv_data_check_report.csv"
@@ -217,7 +216,7 @@ for file_path in csv_files:
         issues_df["File"] == file_name
     ]
 
-    file_path = data_folder / file_name
+    file_path = raw_data_folder / file_name
 
     raw = pd.read_csv(
         file_path,
