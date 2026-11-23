@@ -1,4 +1,9 @@
-"""Interactive summary of short-count AADT estimates by movement."""
+"""AADT dashboard page for directions and turning movements.
+
+This file is loaded by the team dashboard through ``dashboard.py``.  It does
+not call ``st.set_page_config`` because the main dashboard configures the page
+once before running any individual page.
+"""
 
 import sys
 
@@ -8,23 +13,16 @@ import streamlit as st
 
 from dashboard_common import OUTPUT_FOLDER, SRC_FOLDER, page_header
 
+# Reuse the team's reorganized Project2_data/src folder.
 if str(SRC_FOLDER) not in sys.path:
     sys.path.insert(0, str(SRC_FOLDER))
 
-from config import ERROR_CURVE_MAX_DAYS
-from data_loader import load_all_locations
+from config import ERROR_CURVE_MAX_DAYS  # noqa: E402
+from data_loader import load_all_locations  # noqa: E402
 
-# put result to outputs/aadt
-OUTPUTS_DIR = OUTPUT_FOLDER / "aadt"
 
-# Title 
-page_header(
-    "AADT",
-    "AADT by Direction and Turning Movement",
-    "Estimate annual average daily traffic using short-count data "
-    "for direction totals, turning movements, and direction-by-turn movements.",
-)
-
+# The generated AADT tables live with the other project outputs.
+OUTPUTS_DIR = OUTPUT_FOLDER
 CURVES_FILE = OUTPUTS_DIR / "movement_aadt_error_curves.csv"
 SUMMARY_FILE = OUTPUTS_DIR / "movement_aadt_threshold_summary.csv"
 GROUP_ORDER = [
@@ -53,8 +51,6 @@ BAND_COLORS = [
     "#7b6bb2",
     "#e1e7ed",
 ]
-
-
 
 @st.cache_data
 def load_results() -> tuple[pd.DataFrame, pd.DataFrame]:
@@ -363,16 +359,23 @@ def error_curve_chart(curve: pd.DataFrame) -> alt.Chart:
     return (band + mean + targets).properties(height=390)
 
 
-st.title("How many days of traffic counting are enough?")
-st.caption(
-    "MATH 435 | Lincoln traffic estimation | 2025 data | Motor vehicles only"
+page_header(
+    "AADT · Directions and turns",
+    "How many traffic-count days are enough?",
+    "Estimate annual average daily traffic from a short count, then compare "
+    "the required count duration for direction totals, turn totals, and "
+    "individual direction-by-turn movements.",
 )
+st.caption("MATH 435 · Lincoln traffic estimation · 2025 data · Motor vehicles only")
 
 try:
     curves, summary = load_results()
 except FileNotFoundError:
     st.error("The movement result files have not been generated yet.")
-    st.code("python3 analysis/generate_movement_results.py", language="bash")
+    st.code(
+        "python3 Project2_data/analysis/generate_movement_results.py",
+        language="bash",
+    )
     st.stop()
 
 reference_options = sorted(curves["Reference_Location"].dropna().unique())
