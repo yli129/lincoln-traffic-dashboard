@@ -12,9 +12,9 @@ import numpy as np
 import pandas as pd
 
 
-PROJECT_ROOT = Path(__file__).resolve().parents[1]
-SRC_DIR = PROJECT_ROOT / "src"
-sys.path.insert(0, str(SRC_DIR))
+PROJECT_FOLDER = Path(__file__).resolve().parents[1]
+OUTPUT_FOLDER = PROJECT_FOLDER / "outputs" / "aadt"
+OUTPUT_FOLDER.mkdir(parents=True, exist_ok=True)
 
 from aadt_estimation import run_all_error_curves  # noqa: E402
 from config import CLEANED_DATA_DIR, OUTPUTS_DIR  # noqa: E402
