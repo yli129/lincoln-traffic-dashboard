@@ -1,19 +1,29 @@
 """Interactive summary of short-count AADT estimates by movement."""
 
 import sys
-from pathlib import Path
 
 import altair as alt
 import pandas as pd
 import streamlit as st
 
+from dashboard_common import OUTPUT_FOLDER, SRC_FOLDER, page_header
 
-SRC_DIR = Path(__file__).resolve().parents[1]
-sys.path.insert(0, str(SRC_DIR))
+if str(SRC_FOLDER) not in sys.path:
+    sys.path.insert(0, str(SRC_FOLDER))
 
-from config import ERROR_CURVE_MAX_DAYS, OUTPUTS_DIR  # noqa: E402
-from data_loader import load_all_locations  # noqa: E402
+from config import ERROR_CURVE_MAX_DAYS
+from data_loader import load_all_locations
 
+# put result to outputs/aadt
+OUTPUTS_DIR = OUTPUT_FOLDER / "aadt"
+
+# Title 
+page_header(
+    "AADT",
+    "AADT by Direction and Turning Movement",
+    "Estimate annual average daily traffic using short-count data "
+    "for direction totals, turning movements, and direction-by-turn movements.",
+)
 
 CURVES_FILE = OUTPUTS_DIR / "movement_aadt_error_curves.csv"
 SUMMARY_FILE = OUTPUTS_DIR / "movement_aadt_threshold_summary.csv"
@@ -44,11 +54,6 @@ BAND_COLORS = [
     "#e1e7ed",
 ]
 
-st.set_page_config(
-    page_title="Directions & Turns | Lincoln Traffic",
-    page_icon="↪️",
-    layout="wide",
-)
 
 
 @st.cache_data
