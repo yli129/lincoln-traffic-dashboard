@@ -1,0 +1,631 @@
+A,Section,Direction,Weekday,Factor,N_Weeks,Mean_Weekly_ADT
+40th_Street_and_Normal_Boulevard,All Motor Vehicles,Total,0,0.9643389346423071,48,25966.23214285714
+40th_Street_and_Normal_Boulevard,All Motor Vehicles,Total,1,0.9107789561944402,48,25966.23214285714
+40th_Street_and_Normal_Boulevard,All Motor Vehicles,Total,2,0.9255054706702844,48,25966.23214285714
+40th_Street_and_Normal_Boulevard,All Motor Vehicles,Total,3,0.91918441877954,48,25966.23214285714
+40th_Street_and_Normal_Boulevard,All Motor Vehicles,Total,4,0.8995944704452163,48,25966.23214285714
+40th_Street_and_Normal_Boulevard,All Motor Vehicles,Total,5,1.1838932567650817,48,25966.23214285714
+40th_Street_and_Normal_Boulevard,All Motor Vehicles,Total,6,1.3506858582613777,48,25966.23214285714
+40th_Street_and_Normal_Boulevard,All Motor Vehicles,Southbound,0,0.9424372832866401,48,3690.3095238095243
+40th_Street_and_Normal_Boulevard,All Motor Vehicles,Southbound,1,0.8840696992102193,48,3690.3095238095243
+40th_Street_and_Normal_Boulevard,All Motor Vehicles,Southbound,2,0.9150614853151829,48,3690.3095238095243
+40th_Street_and_Normal_Boulevard,All Motor Vehicles,Southbound,3,0.9050375644047249,48,3690.3095238095243
+40th_Street_and_Normal_Boulevard,All Motor Vehicles,Southbound,4,0.8977945116211716,48,3690.3095238095243
+40th_Street_and_Normal_Boulevard,All Motor Vehicles,Southbound,5,1.240240417459773,48,3690.3095238095243
+40th_Street_and_Normal_Boulevard,All Motor Vehicles,Southbound,6,1.4494775800112691,48,3690.3095238095243
+40th_Street_and_Normal_Boulevard,All Motor Vehicles,Westbound,0,0.9649225258286378,48,7337.190476190476
+40th_Street_and_Normal_Boulevard,All Motor Vehicles,Westbound,1,0.91715836325676,48,7337.190476190476
+40th_Street_and_Normal_Boulevard,All Motor Vehicles,Westbound,2,0.9309506375962984,48,7337.190476190476
+40th_Street_and_Normal_Boulevard,All Motor Vehicles,Westbound,3,0.9169315158572913,48,7337.190476190476
+40th_Street_and_Normal_Boulevard,All Motor Vehicles,Westbound,4,0.9015939657142856,48,7337.190476190476
+40th_Street_and_Normal_Boulevard,All Motor Vehicles,Westbound,5,1.1748943079511969,48,7337.190476190476
+40th_Street_and_Normal_Boulevard,All Motor Vehicles,Westbound,6,1.336413853668056,48,7337.190476190476
+40th_Street_and_Normal_Boulevard,All Motor Vehicles,Northbound,0,0.9500814737826372,48,5558.154761904762
+40th_Street_and_Normal_Boulevard,All Motor Vehicles,Northbound,1,0.8941210941988463,48,5558.154761904762
+40th_Street_and_Normal_Boulevard,All Motor Vehicles,Northbound,2,0.909275482416912,48,5558.154761904762
+40th_Street_and_Normal_Boulevard,All Motor Vehicles,Northbound,3,0.9206339347026946,48,5558.154761904762
+40th_Street_and_Normal_Boulevard,All Motor Vehicles,Northbound,4,0.8978069941392607,48,5558.154761904762
+40th_Street_and_Normal_Boulevard,All Motor Vehicles,Northbound,5,1.21680886899468,48,5558.154761904762
+40th_Street_and_Normal_Boulevard,All Motor Vehicles,Northbound,6,1.4136068190780984,48,5558.154761904762
+40th_Street_and_Normal_Boulevard,All Motor Vehicles,Eastbound,0,0.98157633384646,48,9380.577380952382
+40th_Street_and_Normal_Boulevard,All Motor Vehicles,Eastbound,1,0.9269860484787205,48,9380.577380952382
+40th_Street_and_Normal_Boulevard,All Motor Vehicles,Eastbound,2,0.9353180356823851,48,9380.577380952382
+40th_Street_and_Normal_Boulevard,All Motor Vehicles,Eastbound,3,0.925792910762861,48,9380.577380952382
+40th_Street_and_Normal_Boulevard,All Motor Vehicles,Eastbound,4,0.8998047870843162,48,9380.577380952382
+40th_Street_and_Normal_Boulevard,All Motor Vehicles,Eastbound,5,1.151747733776316,48,9380.577380952382
+40th_Street_and_Normal_Boulevard,All Motor Vehicles,Eastbound,6,1.292728603091845,48,9380.577380952382
+40th_Street_and_Normal_Boulevard,Lights,Total,0,0.9662478405798997,48,25733.776785714286
+40th_Street_and_Normal_Boulevard,Lights,Total,1,0.9122170774213811,48,25733.776785714286
+40th_Street_and_Normal_Boulevard,Lights,Total,2,0.9270189901387995,48,25733.776785714286
+40th_Street_and_Normal_Boulevard,Lights,Total,3,0.9208160216500495,48,25733.776785714286
+40th_Street_and_Normal_Boulevard,Lights,Total,4,0.9007416739813858,48,25733.776785714286
+40th_Street_and_Normal_Boulevard,Lights,Total,5,1.1783775319505243,48,25733.776785714286
+40th_Street_and_Normal_Boulevard,Lights,Total,6,1.3417451137881549,48,25733.776785714286
+40th_Street_and_Normal_Boulevard,Lights,Southbound,0,0.9439017323493043,48,3655.3184523809527
+40th_Street_and_Normal_Boulevard,Lights,Southbound,1,0.8853686984754947,48,3655.3184523809527
+40th_Street_and_Normal_Boulevard,Lights,Southbound,2,0.915388634363138,48,3655.3184523809527
+40th_Street_and_Normal_Boulevard,Lights,Southbound,3,0.9064833211798432,48,3655.3184523809527
+40th_Street_and_Normal_Boulevard,Lights,Southbound,4,0.898986963745892,48,3655.3184523809527
+40th_Street_and_Normal_Boulevard,Lights,Southbound,5,1.2352352523499088,48,3655.3184523809527
+40th_Street_and_Normal_Boulevard,Lights,Southbound,6,1.4418098767721996,48,3655.3184523809527
+40th_Street_and_Normal_Boulevard,Lights,Westbound,0,0.9669460338564544,48,7272.642857142858
+40th_Street_and_Normal_Boulevard,Lights,Westbound,1,0.9185601853052654,48,7272.642857142858
+40th_Street_and_Normal_Boulevard,Lights,Westbound,2,0.9323502658616543,48,7272.642857142858
+40th_Street_and_Normal_Boulevard,Lights,Westbound,3,0.9185408494858692,48,7272.642857142858
+40th_Street_and_Normal_Boulevard,Lights,Westbound,4,0.9030412686587022,48,7272.642857142858
+40th_Street_and_Normal_Boulevard,Lights,Westbound,5,1.1695642434998363,48,7272.642857142858
+40th_Street_and_Normal_Boulevard,Lights,Westbound,6,1.3270943376552282,48,7272.642857142858
+40th_Street_and_Normal_Boulevard,Lights,Northbound,0,0.951495181533348,48,5510.604166666667
+40th_Street_and_Normal_Boulevard,Lights,Northbound,1,0.8953447044447529,48,5510.604166666667
+40th_Street_and_Normal_Boulevard,Lights,Northbound,2,0.910799754832756,48,5510.604166666667
+40th_Street_and_Normal_Boulevard,Lights,Northbound,3,0.9221321619690076,48,5510.604166666667
+40th_Street_and_Normal_Boulevard,Lights,Northbound,4,0.8990024641006032,48,5510.604166666667
+40th_Street_and_Normal_Boulevard,Lights,Northbound,5,1.2112659932043193,48,5510.604166666667
+40th_Street_and_Normal_Boulevard,Lights,Northbound,6,1.4048330987598587,48,5510.604166666667
+40th_Street_and_Normal_Boulevard,Lights,Eastbound,0,0.9838957178423916,48,9295.21130952381
+40th_Street_and_Normal_Boulevard,Lights,Eastbound,1,0.9286485882163693,48,9295.21130952381
+40th_Street_and_Normal_Boulevard,Lights,Eastbound,2,0.937405098415513,48,9295.21130952381
+40th_Street_and_Normal_Boulevard,Lights,Eastbound,3,0.9275963684877688,48,9295.21130952381
+40th_Street_and_Normal_Boulevard,Lights,Eastbound,4,0.9006714970621102,48,9295.21130952381
+40th_Street_and_Normal_Boulevard,Lights,Eastbound,5,1.1459447301690853,48,9295.21130952381
+40th_Street_and_Normal_Boulevard,Lights,Eastbound,6,1.2836251829968492,48,9295.21130952381
+40th_Street_and_Normal_Boulevard,Single-Unit Trucks,Total,0,0.7918835638890709,51,169.16806722689074
+40th_Street_and_Normal_Boulevard,Single-Unit Trucks,Total,1,0.7764891934633631,51,169.16806722689074
+40th_Street_and_Normal_Boulevard,Single-Unit Trucks,Total,2,0.7730106109283601,51,169.16806722689074
+40th_Street_and_Normal_Boulevard,Single-Unit Trucks,Total,3,0.77978772854044,51,169.16806722689074
+40th_Street_and_Normal_Boulevard,Single-Unit Trucks,Total,4,0.8193325193325193,51,169.16806722689074
+40th_Street_and_Normal_Boulevard,Single-Unit Trucks,Total,5,2.239182825998294,51,169.16806722689074
+40th_Street_and_Normal_Boulevard,Single-Unit Trucks,Total,6,4.849674777162129,51,169.16806722689074
+40th_Street_and_Normal_Boulevard,Single-Unit Trucks,Southbound,0,0.8380892745326057,51,26.243697478991596
+40th_Street_and_Normal_Boulevard,Single-Unit Trucks,Southbound,1,0.7656914024190912,51,26.243697478991596
+40th_Street_and_Normal_Boulevard,Single-Unit Trucks,Southbound,2,0.8788106181408872,51,26.243697478991596
+40th_Street_and_Normal_Boulevard,Single-Unit Trucks,Southbound,3,0.8043440934065933,51,26.243697478991596
+40th_Street_and_Normal_Boulevard,Single-Unit Trucks,Southbound,4,0.8292618162506638,51,26.243697478991596
+40th_Street_and_Normal_Boulevard,Single-Unit Trucks,Southbound,5,1.8359788359788358,51,26.243697478991596
+40th_Street_and_Normal_Boulevard,Single-Unit Trucks,Southbound,6,2.70936957779063,51,26.243697478991596
+40th_Street_and_Normal_Boulevard,Single-Unit Trucks,Westbound,0,0.7639615470601384,51,47.85994397759102
+40th_Street_and_Normal_Boulevard,Single-Unit Trucks,Westbound,1,0.7955857701620411,51,47.85994397759102
+40th_Street_and_Normal_Boulevard,Single-Unit Trucks,Westbound,2,0.7761071996366112,51,47.85994397759102
+40th_Street_and_Normal_Boulevard,Single-Unit Trucks,Westbound,3,0.7582656548173787,51,47.85994397759102
+40th_Street_and_Normal_Boulevard,Single-Unit Trucks,Westbound,4,0.818255830659451,51,47.85994397759102
+40th_Street_and_Normal_Boulevard,Single-Unit Trucks,Westbound,5,2.262147491063153,51,47.85994397759102
+40th_Street_and_Normal_Boulevard,Single-Unit Trucks,Westbound,6,6.148254767902121,51,47.85994397759102
+40th_Street_and_Normal_Boulevard,Single-Unit Trucks,Northbound,0,0.8301428571428571,51,32.554621848739494
+40th_Street_and_Normal_Boulevard,Single-Unit Trucks,Northbound,1,0.7693631669535284,51,32.554621848739494
+40th_Street_and_Normal_Boulevard,Single-Unit Trucks,Northbound,2,0.7472032917577471,51,32.554621848739494
+40th_Street_and_Normal_Boulevard,Single-Unit Trucks,Northbound,3,0.7868652674339878,51,32.554621848739494
+40th_Street_and_Normal_Boulevard,Single-Unit Trucks,Northbound,4,0.8032345013477089,51,32.554621848739494
+40th_Street_and_Normal_Boulevard,Single-Unit Trucks,Northbound,5,2.3027541113532792,51,32.554621848739494
+40th_Street_and_Normal_Boulevard,Single-Unit Trucks,Northbound,6,4.82641196013289,51,32.554621848739494
+40th_Street_and_Normal_Boulevard,Single-Unit Trucks,Eastbound,0,0.7769924445527662,51,62.50980392156862
+40th_Street_and_Normal_Boulevard,Single-Unit Trucks,Eastbound,1,0.7706067198452984,51,62.50980392156862
+40th_Street_and_Normal_Boulevard,Single-Unit Trucks,Eastbound,2,0.7464294076328728,51,62.50980392156862
+40th_Street_and_Normal_Boulevard,Single-Unit Trucks,Eastbound,3,0.7830999754360107,51,62.50980392156862
+40th_Street_and_Normal_Boulevard,Single-Unit Trucks,Eastbound,4,0.8246249353336781,51,62.50980392156862
+40th_Street_and_Normal_Boulevard,Single-Unit Trucks,Eastbound,5,2.4078549848942594,51,62.50980392156862
+40th_Street_and_Normal_Boulevard,Single-Unit Trucks,Eastbound,6,5.860294117647058,51,62.50980392156862
+40th_Street_and_Normal_Boulevard,Articulated Trucks,Total,0,0.9074992252866441,51,16.406162464985997
+40th_Street_and_Normal_Boulevard,Articulated Trucks,Total,1,0.7930941096817875,51,16.406162464985997
+40th_Street_and_Normal_Boulevard,Articulated Trucks,Total,2,0.7953557848995112,51,16.406162464985997
+40th_Street_and_Normal_Boulevard,Articulated Trucks,Total,3,0.8392319816592636,51,16.406162464985997
+40th_Street_and_Normal_Boulevard,Articulated Trucks,Total,4,0.7072817292597513,51,16.406162464985997
+40th_Street_and_Normal_Boulevard,Articulated Trucks,Total,5,2.3503210272873196,51,16.406162464985997
+40th_Street_and_Normal_Boulevard,Articulated Trucks,Total,6,2.8654598825831705,51,16.406162464985997
+40th_Street_and_Normal_Boulevard,Articulated Trucks,Southbound,0,1.1082251082251082,51,1.4341736694677871
+40th_Street_and_Normal_Boulevard,Articulated Trucks,Southbound,1,0.7241867043847241,51,1.4341736694677871
+40th_Street_and_Normal_Boulevard,Articulated Trucks,Southbound,2,1.0301810865191146,51,1.4341736694677871
+40th_Street_and_Normal_Boulevard,Articulated Trucks,Southbound,3,0.8707482993197279,51,1.4341736694677871
+40th_Street_and_Normal_Boulevard,Articulated Trucks,Southbound,4,0.5300207039337473,51,1.4341736694677871
+40th_Street_and_Normal_Boulevard,Articulated Trucks,Southbound,5,2.0317460317460316,51,1.4341736694677871
+40th_Street_and_Normal_Boulevard,Articulated Trucks,Southbound,6,4.571428571428571,51,1.4341736694677871
+40th_Street_and_Normal_Boulevard,Articulated Trucks,Westbound,0,0.9970645792563604,51,5.708683473389358
+40th_Street_and_Normal_Boulevard,Articulated Trucks,Westbound,1,0.7389412617839016,51,5.708683473389358
+40th_Street_and_Normal_Boulevard,Articulated Trucks,Westbound,2,0.9802789802789805,51,5.708683473389358
+40th_Street_and_Normal_Boulevard,Articulated Trucks,Westbound,3,1.0004909180166914,51,5.708683473389358
+40th_Street_and_Normal_Boulevard,Articulated Trucks,Westbound,4,0.5264789460087834,51,5.708683473389358
+40th_Street_and_Normal_Boulevard,Articulated Trucks,Westbound,5,2.2224645583424216,51,5.708683473389358
+40th_Street_and_Normal_Boulevard,Articulated Trucks,Westbound,6,3.639285714285715,51,5.708683473389358
+40th_Street_and_Normal_Boulevard,Articulated Trucks,Northbound,0,0.9460641399416909,51,1.8179271708683473
+40th_Street_and_Normal_Boulevard,Articulated Trucks,Northbound,1,0.8829931972789115,51,1.8179271708683473
+40th_Street_and_Normal_Boulevard,Articulated Trucks,Northbound,2,0.7300337457817773,51,1.8179271708683473
+40th_Street_and_Normal_Boulevard,Articulated Trucks,Northbound,3,0.7857142857142857,51,1.8179271708683473
+40th_Street_and_Normal_Boulevard,Articulated Trucks,Northbound,4,0.8746630727762803,51,1.8179271708683473
+40th_Street_and_Normal_Boulevard,Articulated Trucks,Northbound,5,2.06031746031746,51,1.8179271708683473
+40th_Street_and_Normal_Boulevard,Articulated Trucks,Northbound,6,1.854285714285714,51,1.8179271708683473
+40th_Street_and_Normal_Boulevard,Articulated Trucks,Eastbound,0,0.8148375229920295,51,7.445378151260504
+40th_Street_and_Normal_Boulevard,Articulated Trucks,Eastbound,1,0.8345368916797489,51,7.445378151260504
+40th_Street_and_Normal_Boulevard,Articulated Trucks,Eastbound,2,0.6817132598102078,51,7.445378151260504
+40th_Street_and_Normal_Boulevard,Articulated Trucks,Eastbound,3,0.7534013605442177,51,7.445378151260504
+40th_Street_and_Normal_Boulevard,Articulated Trucks,Eastbound,4,0.9837157660991858,51,7.445378151260504
+40th_Street_and_Normal_Boulevard,Articulated Trucks,Eastbound,5,2.636904761904762,51,7.445378151260504
+40th_Street_and_Normal_Boulevard,Articulated Trucks,Eastbound,6,2.600782778864971,51,7.445378151260504
+40th_Street_and_Normal_Boulevard,Buses,Total,0,0.7552625152625152,51,43.31652661064425
+40th_Street_and_Normal_Boulevard,Buses,Total,1,0.729090051862329,51,43.31652661064425
+40th_Street_and_Normal_Boulevard,Buses,Total,2,0.7935139573070606,51,43.31652661064425
+40th_Street_and_Normal_Boulevard,Buses,Total,3,0.7228870605833956,51,43.31652661064425
+40th_Street_and_Normal_Boulevard,Buses,Total,4,0.741820972848508,51,43.31652661064425
+40th_Street_and_Normal_Boulevard,Buses,Total,5,4.2483516483516475,51,43.31652661064425
+40th_Street_and_Normal_Boulevard,Buses,Total,6,12.918964076858812,51,43.31652661064425
+40th_Street_and_Normal_Boulevard,Buses,Southbound,0,0.7046293666571997,51,6.949579831932773
+40th_Street_and_Normal_Boulevard,Buses,Southbound,1,0.7046293666571997,51,6.949579831932773
+40th_Street_and_Normal_Boulevard,Buses,Southbound,2,0.8378926038500507,51,6.949579831932773
+40th_Street_and_Normal_Boulevard,Buses,Southbound,3,0.6763904034896402,51,6.949579831932773
+40th_Street_and_Normal_Boulevard,Buses,Southbound,4,0.7557112397197685,51,6.949579831932773
+40th_Street_and_Normal_Boulevard,Buses,Southbound,5,8.860714285714286,51,6.949579831932773
+40th_Street_and_Normal_Boulevard,Buses,Southbound,6,18.654135338345867,51,6.949579831932773
+40th_Street_and_Normal_Boulevard,Buses,Westbound,0,0.7760382691889541,51,9.99719887955182
+40th_Street_and_Normal_Boulevard,Buses,Westbound,1,0.7150871568823883,51,9.99719887955182
+40th_Street_and_Normal_Boulevard,Buses,Westbound,2,0.7784078516902945,51,9.99719887955182
+40th_Street_and_Normal_Boulevard,Buses,Westbound,3,0.7357245928674501,51,9.99719887955182
+40th_Street_and_Normal_Boulevard,Buses,Westbound,4,0.7520016856300042,51,9.99719887955182
+40th_Street_and_Normal_Boulevard,Buses,Westbound,5,3.5905432595573443,51,9.99719887955182
+40th_Street_and_Normal_Boulevard,Buses,Westbound,6,16.447004608294932,51,9.99719887955182
+40th_Street_and_Normal_Boulevard,Buses,Northbound,0,0.7444481272787536,51,12.582633053221288
+40th_Street_and_Normal_Boulevard,Buses,Northbound,1,0.7505430242272347,51,12.582633053221288
+40th_Street_and_Normal_Boulevard,Buses,Northbound,2,0.7864145658263305,51,12.582633053221288
+40th_Street_and_Normal_Boulevard,Buses,Northbound,3,0.7594251901944209,51,12.582633053221288
+40th_Street_and_Normal_Boulevard,Buses,Northbound,4,0.716999201915403,51,12.582633053221288
+40th_Street_and_Normal_Boulevard,Buses,Northbound,5,4.249763481551561,51,12.582633053221288
+40th_Street_and_Normal_Boulevard,Buses,Northbound,6,9.436974789915965,51,12.582633053221288
+40th_Street_and_Normal_Boulevard,Buses,Eastbound,0,0.7786742604018353,51,13.787114845938376
+40th_Street_and_Normal_Boulevard,Buses,Eastbound,1,0.7332042305973485,51,13.787114845938376
+40th_Street_and_Normal_Boulevard,Buses,Eastbound,2,0.790048154093098,51,13.787114845938376
+40th_Street_and_Normal_Boulevard,Buses,Eastbound,3,0.7073871802242024,51,13.787114845938376
+40th_Street_and_Normal_Boulevard,Buses,Eastbound,4,0.7512210012210013,51,13.787114845938376
+40th_Street_and_Normal_Boulevard,Buses,Eastbound,5,3.7601222307104663,51,13.787114845938376
+40th_Street_and_Normal_Boulevard,Buses,Eastbound,6,13.266846361185985,51,13.787114845938376
+40th_Street_and_Normal_Boulevard,Motorized Vehicles,Total,0,0.2857142857142857,51,0.011204481792717087
+40th_Street_and_Normal_Boulevard,Motorized Vehicles,Total,1,0.5714285714285714,51,0.011204481792717087
+40th_Street_and_Normal_Boulevard,Motorized Vehicles,Total,2,,51,0.011204481792717087
+40th_Street_and_Normal_Boulevard,Motorized Vehicles,Total,3,0.5714285714285714,51,0.011204481792717087
+40th_Street_and_Normal_Boulevard,Motorized Vehicles,Total,4,,51,0.011204481792717087
+40th_Street_and_Normal_Boulevard,Motorized Vehicles,Total,5,,51,0.011204481792717087
+40th_Street_and_Normal_Boulevard,Motorized Vehicles,Total,6,,51,0.011204481792717087
+40th_Street_and_Normal_Boulevard,Motorized Vehicles,Southbound,0,,51,0.0
+40th_Street_and_Normal_Boulevard,Motorized Vehicles,Southbound,1,,51,0.0
+40th_Street_and_Normal_Boulevard,Motorized Vehicles,Southbound,2,,51,0.0
+40th_Street_and_Normal_Boulevard,Motorized Vehicles,Southbound,3,,51,0.0
+40th_Street_and_Normal_Boulevard,Motorized Vehicles,Southbound,4,,51,0.0
+40th_Street_and_Normal_Boulevard,Motorized Vehicles,Southbound,5,,51,0.0
+40th_Street_and_Normal_Boulevard,Motorized Vehicles,Southbound,6,,51,0.0
+40th_Street_and_Normal_Boulevard,Motorized Vehicles,Westbound,0,,51,0.0
+40th_Street_and_Normal_Boulevard,Motorized Vehicles,Westbound,1,,51,0.0
+40th_Street_and_Normal_Boulevard,Motorized Vehicles,Westbound,2,,51,0.0
+40th_Street_and_Normal_Boulevard,Motorized Vehicles,Westbound,3,,51,0.0
+40th_Street_and_Normal_Boulevard,Motorized Vehicles,Westbound,4,,51,0.0
+40th_Street_and_Normal_Boulevard,Motorized Vehicles,Westbound,5,,51,0.0
+40th_Street_and_Normal_Boulevard,Motorized Vehicles,Westbound,6,,51,0.0
+40th_Street_and_Normal_Boulevard,Motorized Vehicles,Northbound,0,0.2857142857142857,51,0.011204481792717087
+40th_Street_and_Normal_Boulevard,Motorized Vehicles,Northbound,1,0.5714285714285714,51,0.011204481792717087
+40th_Street_and_Normal_Boulevard,Motorized Vehicles,Northbound,2,,51,0.011204481792717087
+40th_Street_and_Normal_Boulevard,Motorized Vehicles,Northbound,3,0.5714285714285714,51,0.011204481792717087
+40th_Street_and_Normal_Boulevard,Motorized Vehicles,Northbound,4,,51,0.011204481792717087
+40th_Street_and_Normal_Boulevard,Motorized Vehicles,Northbound,5,,51,0.011204481792717087
+40th_Street_and_Normal_Boulevard,Motorized Vehicles,Northbound,6,,51,0.011204481792717087
+40th_Street_and_Normal_Boulevard,Motorized Vehicles,Eastbound,0,,51,0.0
+40th_Street_and_Normal_Boulevard,Motorized Vehicles,Eastbound,1,,51,0.0
+40th_Street_and_Normal_Boulevard,Motorized Vehicles,Eastbound,2,,51,0.0
+40th_Street_and_Normal_Boulevard,Motorized Vehicles,Eastbound,3,,51,0.0
+40th_Street_and_Normal_Boulevard,Motorized Vehicles,Eastbound,4,,51,0.0
+40th_Street_and_Normal_Boulevard,Motorized Vehicles,Eastbound,5,,51,0.0
+40th_Street_and_Normal_Boulevard,Motorized Vehicles,Eastbound,6,,51,0.0
+40th_Street_and_South_Street,All Motor Vehicles,Total,0,0.9562232611255843,48,19936.258928571428
+40th_Street_and_South_Street,All Motor Vehicles,Total,1,0.8976135580647002,48,19936.258928571428
+40th_Street_and_South_Street,All Motor Vehicles,Total,2,0.9098026437938266,48,19936.258928571428
+40th_Street_and_South_Street,All Motor Vehicles,Total,3,0.8958514241099471,48,19936.258928571428
+40th_Street_and_South_Street,All Motor Vehicles,Total,4,0.90565071180952,48,19936.258928571428
+40th_Street_and_South_Street,All Motor Vehicles,Total,5,1.2336141841866193,48,19936.258928571428
+40th_Street_and_South_Street,All Motor Vehicles,Total,6,1.4085433821149904,48,19936.258928571428
+40th_Street_and_South_Street,All Motor Vehicles,Southbound,0,0.9345330245927069,48,3559.032738095238
+40th_Street_and_South_Street,All Motor Vehicles,Southbound,1,0.8874655651471792,48,3559.032738095238
+40th_Street_and_South_Street,All Motor Vehicles,Southbound,2,0.9017010267689841,48,3559.032738095238
+40th_Street_and_South_Street,All Motor Vehicles,Southbound,3,0.8795834200656542,48,3559.032738095238
+40th_Street_and_South_Street,All Motor Vehicles,Southbound,4,0.9027874767005661,48,3559.032738095238
+40th_Street_and_South_Street,All Motor Vehicles,Southbound,5,1.2943702279748104,48,3559.032738095238
+40th_Street_and_South_Street,All Motor Vehicles,Southbound,6,1.4771729234889313,48,3559.032738095238
+40th_Street_and_South_Street,All Motor Vehicles,Westbound,0,0.9623782705697334,48,6525.586309523809
+40th_Street_and_South_Street,All Motor Vehicles,Westbound,1,0.8955260395606909,48,6525.586309523809
+40th_Street_and_South_Street,All Motor Vehicles,Westbound,2,0.9084738108013483,48,6525.586309523809
+40th_Street_and_South_Street,All Motor Vehicles,Westbound,3,0.8949656785131613,48,6525.586309523809
+40th_Street_and_South_Street,All Motor Vehicles,Westbound,4,0.9059775344039303,48,6525.586309523809
+40th_Street_and_South_Street,All Motor Vehicles,Westbound,5,1.2348199889504692,48,6525.586309523809
+40th_Street_and_South_Street,All Motor Vehicles,Westbound,6,1.4034650771887645,48,6525.586309523809
+40th_Street_and_South_Street,All Motor Vehicles,Northbound,0,0.9552738320426049,48,4071.6755952380954
+40th_Street_and_South_Street,All Motor Vehicles,Northbound,1,0.9001493578271398,48,4071.6755952380954
+40th_Street_and_South_Street,All Motor Vehicles,Northbound,2,0.9221715552949187,48,4071.6755952380954
+40th_Street_and_South_Street,All Motor Vehicles,Northbound,3,0.9081340106752377,48,4071.6755952380954
+40th_Street_and_South_Street,All Motor Vehicles,Northbound,4,0.9028564301189943,48,4071.6755952380954
+40th_Street_and_South_Street,All Motor Vehicles,Northbound,5,1.199322704308621,48,4071.6755952380954
+40th_Street_and_South_Street,All Motor Vehicles,Northbound,6,1.398020204662646,48,4071.6755952380954
+40th_Street_and_South_Street,All Motor Vehicles,Eastbound,0,0.9637121965864345,48,5779.964285714285
+40th_Street_and_South_Street,All Motor Vehicles,Eastbound,1,0.9045681420578716,48,5779.964285714285
+40th_Street_and_South_Street,All Motor Vehicles,Eastbound,2,0.907746800795349,48,5779.964285714285
+40th_Street_and_South_Street,All Motor Vehicles,Eastbound,3,0.8985273365750742,48,5779.964285714285
+40th_Street_and_South_Street,All Motor Vehicles,Eastbound,4,0.9090376334019845,48,5779.964285714285
+40th_Street_and_South_Street,All Motor Vehicles,Eastbound,5,1.2215654738055086,48,5779.964285714285
+40th_Street_and_South_Street,All Motor Vehicles,Eastbound,6,1.3819813588485692,48,5779.964285714285
+40th_Street_and_South_Street,Lights,Total,0,0.9587954986156826,48,19648.75595238095
+40th_Street_and_South_Street,Lights,Total,1,0.8995687726425702,48,19648.75595238095
+40th_Street_and_South_Street,Lights,Total,2,0.9124403187496355,48,19648.75595238095
+40th_Street_and_South_Street,Lights,Total,3,0.898136463786854,48,19648.75595238095
+40th_Street_and_South_Street,Lights,Total,4,0.907638897863262,48,19648.75595238095
+40th_Street_and_South_Street,Lights,Total,5,1.2243788930746367,48,19648.75595238095
+40th_Street_and_South_Street,Lights,Total,6,1.3937244230710364,48,19648.75595238095
+40th_Street_and_South_Street,Lights,Southbound,0,0.9366962979846906,48,3522.446428571429
+40th_Street_and_South_Street,Lights,Southbound,1,0.8893054947135727,48,3522.446428571429
+40th_Street_and_South_Street,Lights,Southbound,2,0.9031383229160069,48,3522.446428571429
+40th_Street_and_South_Street,Lights,Southbound,3,0.8814793133419282,48,3522.446428571429
+40th_Street_and_South_Street,Lights,Southbound,4,0.90484447319049,48,3522.446428571429
+40th_Street_and_South_Street,Lights,Southbound,5,1.2849586461022677,48,3522.446428571429
+40th_Street_and_South_Street,Lights,Southbound,6,1.4644697718675874,48,3522.446428571429
+40th_Street_and_South_Street,Lights,Westbound,0,0.9652242212674541,48,6418.74107142857
+40th_Street_and_South_Street,Lights,Westbound,1,0.8977234082318273,48,6418.74107142857
+40th_Street_and_South_Street,Lights,Westbound,2,0.9112837596306689,48,6418.74107142857
+40th_Street_and_South_Street,Lights,Westbound,3,0.897346900140009,48,6418.74107142857
+40th_Street_and_South_Street,Lights,Westbound,4,0.9077798444561456,48,6418.74107142857
+40th_Street_and_South_Street,Lights,Westbound,5,1.2257644485189012,48,6418.74107142857
+40th_Street_and_South_Street,Lights,Westbound,6,1.3871798087777014,48,6418.74107142857
+40th_Street_and_South_Street,Lights,Northbound,0,0.9574314966669093,48,4034.7559523809527
+40th_Street_and_South_Street,Lights,Northbound,1,0.9011180239823458,48,4034.7559523809527
+40th_Street_and_South_Street,Lights,Northbound,2,0.9240780881490874,48,4034.7559523809527
+40th_Street_and_South_Street,Lights,Northbound,3,0.9100140763479094,48,4034.7559523809527
+40th_Street_and_South_Street,Lights,Northbound,4,0.9039106756136852,48,4034.7559523809527
+40th_Street_and_South_Street,Lights,Northbound,5,1.1928104661424446,48,4034.7559523809527
+40th_Street_and_South_Street,Lights,Northbound,6,1.3886913596940058,48,4034.7559523809527
+40th_Street_and_South_Street,Lights,Eastbound,0,0.966651164937218,48,5672.8125
+40th_Street_and_South_Street,Lights,Eastbound,1,0.9070694755356572,48,5672.8125
+40th_Street_and_South_Street,Lights,Eastbound,2,0.9114141403998514,48,5672.8125
+40th_Street_and_South_Street,Lights,Eastbound,3,0.9012421681842102,48,5672.8125
+40th_Street_and_South_Street,Lights,Eastbound,4,0.9119025053499485,48,5672.8125
+40th_Street_and_South_Street,Lights,Eastbound,5,1.210183864215144,48,5672.8125
+40th_Street_and_South_Street,Lights,Eastbound,6,1.363615876926775,48,5672.8125
+40th_Street_and_South_Street,Single-Unit Trucks,Total,0,0.8168718964379,51,159.43417366946778
+40th_Street_and_South_Street,Single-Unit Trucks,Total,1,0.8022834590175488,51,159.43417366946778
+40th_Street_and_South_Street,Single-Unit Trucks,Total,2,0.7652840336134453,51,159.43417366946778
+40th_Street_and_South_Street,Single-Unit Trucks,Total,3,0.7974836070167572,51,159.43417366946778
+40th_Street_and_South_Street,Single-Unit Trucks,Total,4,0.8400808820273641,51,159.43417366946778
+40th_Street_and_South_Street,Single-Unit Trucks,Total,5,2.09781807459826,51,159.43417366946778
+40th_Street_and_South_Street,Single-Unit Trucks,Total,6,3.314774911187467,51,159.43417366946778
+40th_Street_and_South_Street,Single-Unit Trucks,Southbound,0,0.7607585703865791,51,20.45098039215686
+40th_Street_and_South_Street,Single-Unit Trucks,Southbound,1,0.7360621030345801,51,20.45098039215686
+40th_Street_and_South_Street,Single-Unit Trucks,Southbound,2,0.8054054054054054,51,20.45098039215686
+40th_Street_and_South_Street,Single-Unit Trucks,Southbound,3,0.7754646840148699,51,20.45098039215686
+40th_Street_and_South_Street,Single-Unit Trucks,Southbound,4,0.7955758962623951,51,20.45098039215686
+40th_Street_and_South_Street,Single-Unit Trucks,Southbound,5,2.7665782493368702,51,20.45098039215686
+40th_Street_and_South_Street,Single-Unit Trucks,Southbound,6,5.6378378378378375,51,20.45098039215686
+40th_Street_and_South_Street,Single-Unit Trucks,Westbound,0,0.8241601435094585,51,56.62464985994397
+40th_Street_and_South_Street,Single-Unit Trucks,Westbound,1,0.8080182268766487,51,56.62464985994397
+40th_Street_and_South_Street,Single-Unit Trucks,Westbound,2,0.7794486215538846,51,56.62464985994397
+40th_Street_and_South_Street,Single-Unit Trucks,Westbound,3,0.8032982316709716,51,56.62464985994397
+40th_Street_and_South_Street,Single-Unit Trucks,Westbound,4,0.8759045019281597,51,56.62464985994397
+40th_Street_and_South_Street,Single-Unit Trucks,Westbound,5,1.8801153273809523,51,56.62464985994397
+40th_Street_and_South_Street,Single-Unit Trucks,Westbound,6,2.876351735913489,51,56.62464985994397
+40th_Street_and_South_Street,Single-Unit Trucks,Northbound,0,0.7784883720930232,51,26.254901960784313
+40th_Street_and_South_Street,Single-Unit Trucks,Northbound,1,0.8051713770294648,51,26.254901960784313
+40th_Street_and_South_Street,Single-Unit Trucks,Northbound,2,0.7476270240089335,51,26.254901960784313
+40th_Street_and_South_Street,Single-Unit Trucks,Northbound,3,0.7459610027855154,51,26.254901960784313
+40th_Street_and_South_Street,Single-Unit Trucks,Northbound,4,0.8534098151688974,51,26.254901960784313
+40th_Street_and_South_Street,Single-Unit Trucks,Northbound,5,2.498134328358209,51,26.254901960784313
+40th_Street_and_South_Street,Single-Unit Trucks,Northbound,6,4.478260869565218,51,26.254901960784313
+40th_Street_and_South_Street,Single-Unit Trucks,Eastbound,0,0.8518266490877385,51,56.10364145658262
+40th_Street_and_South_Street,Single-Unit Trucks,Eastbound,1,0.8219723396396764,51,56.10364145658262
+40th_Street_and_South_Street,Single-Unit Trucks,Eastbound,2,0.7462925702362321,51,56.10364145658262
+40th_Street_and_South_Street,Single-Unit Trucks,Eastbound,3,0.8267222520328558,51,56.10364145658262
+40th_Street_and_South_Street,Single-Unit Trucks,Eastbound,4,0.817043322183242,51,56.10364145658262
+40th_Street_and_South_Street,Single-Unit Trucks,Eastbound,5,2.0051056161777954,51,56.10364145658262
+40th_Street_and_South_Street,Single-Unit Trucks,Eastbound,6,2.9650629163582525,51,56.10364145658262
+40th_Street_and_South_Street,Articulated Trucks,Total,0,0.8665186281766594,51,9.837535014005603
+40th_Street_and_South_Street,Articulated Trucks,Total,1,0.7742504409171077,51,9.837535014005603
+40th_Street_and_South_Street,Articulated Trucks,Total,2,0.7096383107698526,51,9.837535014005603
+40th_Street_and_South_Street,Articulated Trucks,Total,3,0.8518069366965803,51,9.837535014005603
+40th_Street_and_South_Street,Articulated Trucks,Total,4,0.764808362369338,51,9.837535014005603
+40th_Street_and_South_Street,Articulated Trucks,Total,5,2.333554817275748,51,9.837535014005603
+40th_Street_and_South_Street,Articulated Trucks,Total,6,4.251815980629541,51,9.837535014005603
+40th_Street_and_South_Street,Articulated Trucks,Southbound,0,0.8481012658227848,51,1.3137254901960784
+40th_Street_and_South_Street,Articulated Trucks,Southbound,1,0.6442307692307693,51,1.3137254901960784
+40th_Street_and_South_Street,Articulated Trucks,Southbound,2,0.8933333333333333,51,1.3137254901960784
+40th_Street_and_South_Street,Articulated Trucks,Southbound,3,1.0,51,1.3137254901960784
+40th_Street_and_South_Street,Articulated Trucks,Southbound,4,0.6261682242990654,51,1.3137254901960784
+40th_Street_and_South_Street,Articulated Trucks,Southbound,5,2.9130434782608696,51,1.3137254901960784
+40th_Street_and_South_Street,Articulated Trucks,Southbound,6,4.785714285714286,51,1.3137254901960784
+40th_Street_and_South_Street,Articulated Trucks,Westbound,0,1.0025210084033613,51,3.3417366946778713
+40th_Street_and_South_Street,Articulated Trucks,Westbound,1,0.7071724955542383,51,3.3417366946778713
+40th_Street_and_South_Street,Articulated Trucks,Westbound,2,0.6220020855057352,51,3.3417366946778713
+40th_Street_and_South_Street,Articulated Trucks,Westbound,3,0.8233264320220842,51,3.3417366946778713
+40th_Street_and_South_Street,Articulated Trucks,Westbound,4,0.8001341381623073,51,3.3417366946778713
+40th_Street_and_South_Street,Articulated Trucks,Westbound,5,2.5822510822510827,51,3.3417366946778713
+40th_Street_and_South_Street,Articulated Trucks,Westbound,6,7.746753246753247,51,3.3417366946778713
+40th_Street_and_South_Street,Articulated Trucks,Northbound,0,0.9038961038961039,51,0.9747899159663865
+40th_Street_and_South_Street,Articulated Trucks,Northbound,1,0.9038961038961039,51,0.9747899159663865
+40th_Street_and_South_Street,Articulated Trucks,Northbound,2,0.7532467532467533,51,0.9747899159663865
+40th_Street_and_South_Street,Articulated Trucks,Northbound,3,0.7532467532467533,51,0.9747899159663865
+40th_Street_and_South_Street,Articulated Trucks,Northbound,4,0.73109243697479,51,0.9747899159663865
+40th_Street_and_South_Street,Articulated Trucks,Northbound,5,1.7755102040816326,51,0.9747899159663865
+40th_Street_and_South_Street,Articulated Trucks,Northbound,6,4.9714285714285715,51,0.9747899159663865
+40th_Street_and_South_Street,Articulated Trucks,Eastbound,0,0.7802597402597404,51,4.207282913165267
+40th_Street_and_South_Street,Articulated Trucks,Eastbound,1,0.8652073732718896,51,4.207282913165267
+40th_Street_and_South_Street,Articulated Trucks,Eastbound,2,0.7348336594911938,51,4.207282913165267
+40th_Street_and_South_Street,Articulated Trucks,Eastbound,3,0.8617326448651752,51,4.207282913165267
+40th_Street_and_South_Street,Articulated Trucks,Eastbound,4,0.8006396588486142,51,4.207282913165267
+40th_Street_and_South_Street,Articulated Trucks,Eastbound,5,2.189504373177843,51,4.207282913165267
+40th_Street_and_South_Street,Articulated Trucks,Eastbound,6,2.9801587301587307,51,4.207282913165267
+40th_Street_and_South_Street,Buses,Total,0,0.7758081334723669,51,116.70588235294116
+40th_Street_and_South_Street,Buses,Total,1,0.7487734306202037,51,116.70588235294116
+40th_Street_and_South_Street,Buses,Total,2,0.7602503512581427,51,116.70588235294116
+40th_Street_and_South_Street,Buses,Total,3,0.7355412753336628,51,116.70588235294116
+40th_Street_and_South_Street,Buses,Total,4,0.7373637264618433,51,116.70588235294116
+40th_Street_and_South_Street,Buses,Total,5,3.4089347079037795,51,116.70588235294116
+40th_Street_and_South_Street,Buses,Total,6,19.57894736842105,51,116.70588235294116
+40th_Street_and_South_Street,Buses,Southbound,0,0.7468131868131868,51,14.277310924369747
+40th_Street_and_South_Street,Buses,Southbound,1,0.7437618561214067,51,14.277310924369747
+40th_Street_and_South_Street,Buses,Southbound,2,0.7569052569052569,51,14.277310924369747
+40th_Street_and_South_Street,Buses,Southbound,3,0.6798719487795117,51,14.277310924369747
+40th_Street_and_South_Street,Buses,Southbound,4,0.6895292207792207,51,14.277310924369747
+40th_Street_and_South_Street,Buses,Southbound,5,15.829192546583851,51,14.277310924369747
+40th_Street_and_South_Street,Buses,Southbound,6,91.01785714285714,51,14.277310924369747
+40th_Street_and_South_Street,Buses,Westbound,0,0.7815015297717107,51,46.507002801120436
+40th_Street_and_South_Street,Buses,Westbound,1,0.7486922799422797,51,46.507002801120436
+40th_Street_and_South_Street,Buses,Westbound,2,0.7653620983727467,51,46.507002801120436
+40th_Street_and_South_Street,Buses,Westbound,3,0.7529705215419499,51,46.507002801120436
+40th_Street_and_South_Street,Buses,Westbound,4,0.7524927483683826,51,46.507002801120436
+40th_Street_and_South_Street,Buses,Westbound,5,2.7294098306756527,51,46.507002801120436
+40th_Street_and_South_Street,Buses,Westbound,6,18.24505494505494,51,46.507002801120436
+40th_Street_and_South_Street,Buses,Northbound,0,0.7184045089963146,51,9.282913165266104
+40th_Street_and_South_Street,Buses,Northbound,1,0.8051506316812438,51,9.282913165266104
+40th_Street_and_South_Street,Buses,Northbound,2,0.7761124121779858,51,9.282913165266104
+40th_Street_and_South_Street,Buses,Northbound,3,0.746732762505633,51,9.282913165266104
+40th_Street_and_South_Street,Buses,Northbound,4,0.7013756613756612,51,9.282913165266104
+40th_Street_and_South_Street,Buses,Northbound,5,5.441707717569785,51,9.282913165266104
+40th_Street_and_South_Street,Buses,Northbound,6,7.761124121779858,51,9.282913165266104
+40th_Street_and_South_Street,Buses,Eastbound,0,0.7920650777793636,51,46.63865546218488
+40th_Street_and_South_Street,Buses,Eastbound,1,0.7400657836252112,51,46.63865546218488
+40th_Street_and_South_Street,Buses,Eastbound,2,0.7531891794083055,51,46.63865546218488
+40th_Street_and_South_Street,Buses,Eastbound,3,0.7348073613133855,51,46.63865546218488
+40th_Street_and_South_Street,Buses,Eastbound,4,0.7458674909286387,51,46.63865546218488
+40th_Street_and_South_Street,Buses,Eastbound,5,3.1970046082949315,51,46.63865546218488
+40th_Street_and_South_Street,Buses,Eastbound,6,22.6530612244898,51,46.63865546218488
+40th_Street_and_South_Street,Motorized Vehicles,Total,0,,51,0.0056022408963585435
+40th_Street_and_South_Street,Motorized Vehicles,Total,1,,51,0.0056022408963585435
+40th_Street_and_South_Street,Motorized Vehicles,Total,2,0.2857142857142857,51,0.0056022408963585435
+40th_Street_and_South_Street,Motorized Vehicles,Total,3,0.2857142857142857,51,0.0056022408963585435
+40th_Street_and_South_Street,Motorized Vehicles,Total,4,,51,0.0056022408963585435
+40th_Street_and_South_Street,Motorized Vehicles,Total,5,,51,0.0056022408963585435
+40th_Street_and_South_Street,Motorized Vehicles,Total,6,,51,0.0056022408963585435
+40th_Street_and_South_Street,Motorized Vehicles,Southbound,0,,51,0.0
+40th_Street_and_South_Street,Motorized Vehicles,Southbound,1,,51,0.0
+40th_Street_and_South_Street,Motorized Vehicles,Southbound,2,,51,0.0
+40th_Street_and_South_Street,Motorized Vehicles,Southbound,3,,51,0.0
+40th_Street_and_South_Street,Motorized Vehicles,Southbound,4,,51,0.0
+40th_Street_and_South_Street,Motorized Vehicles,Southbound,5,,51,0.0
+40th_Street_and_South_Street,Motorized Vehicles,Southbound,6,,51,0.0
+40th_Street_and_South_Street,Motorized Vehicles,Westbound,0,,51,0.0056022408963585435
+40th_Street_and_South_Street,Motorized Vehicles,Westbound,1,,51,0.0056022408963585435
+40th_Street_and_South_Street,Motorized Vehicles,Westbound,2,0.2857142857142857,51,0.0056022408963585435
+40th_Street_and_South_Street,Motorized Vehicles,Westbound,3,0.2857142857142857,51,0.0056022408963585435
+40th_Street_and_South_Street,Motorized Vehicles,Westbound,4,,51,0.0056022408963585435
+40th_Street_and_South_Street,Motorized Vehicles,Westbound,5,,51,0.0056022408963585435
+40th_Street_and_South_Street,Motorized Vehicles,Westbound,6,,51,0.0056022408963585435
+40th_Street_and_South_Street,Motorized Vehicles,Northbound,0,,51,0.0
+40th_Street_and_South_Street,Motorized Vehicles,Northbound,1,,51,0.0
+40th_Street_and_South_Street,Motorized Vehicles,Northbound,2,,51,0.0
+40th_Street_and_South_Street,Motorized Vehicles,Northbound,3,,51,0.0
+40th_Street_and_South_Street,Motorized Vehicles,Northbound,4,,51,0.0
+40th_Street_and_South_Street,Motorized Vehicles,Northbound,5,,51,0.0
+40th_Street_and_South_Street,Motorized Vehicles,Northbound,6,,51,0.0
+40th_Street_and_South_Street,Motorized Vehicles,Eastbound,0,,51,0.0
+40th_Street_and_South_Street,Motorized Vehicles,Eastbound,1,,51,0.0
+40th_Street_and_South_Street,Motorized Vehicles,Eastbound,2,,51,0.0
+40th_Street_and_South_Street,Motorized Vehicles,Eastbound,3,,51,0.0
+40th_Street_and_South_Street,Motorized Vehicles,Eastbound,4,,51,0.0
+40th_Street_and_South_Street,Motorized Vehicles,Eastbound,5,,51,0.0
+40th_Street_and_South_Street,Motorized Vehicles,Eastbound,6,,51,0.0
+South_Street_and_Normal_Boulevard,All Motor Vehicles,Total,0,0.965854598853395,48,30286.86607142857
+South_Street_and_Normal_Boulevard,All Motor Vehicles,Total,1,0.9113988499938068,48,30286.86607142857
+South_Street_and_Normal_Boulevard,All Motor Vehicles,Total,2,0.9201865296181009,48,30286.86607142857
+South_Street_and_Normal_Boulevard,All Motor Vehicles,Total,3,0.9148561651058396,48,30286.86607142857
+South_Street_and_Normal_Boulevard,All Motor Vehicles,Total,4,0.9030381873191674,48,30286.86607142857
+South_Street_and_Normal_Boulevard,All Motor Vehicles,Total,5,1.19325365947693,48,30286.86607142857
+South_Street_and_Normal_Boulevard,All Motor Vehicles,Total,6,1.3473254699969337,48,30286.86607142857
+South_Street_and_Normal_Boulevard,All Motor Vehicles,Southbound,0,0.9770657711845763,48,9305.574404761905
+South_Street_and_Normal_Boulevard,All Motor Vehicles,Southbound,1,0.925812650641652,48,9305.574404761905
+South_Street_and_Normal_Boulevard,All Motor Vehicles,Southbound,2,0.9327922552544041,48,9305.574404761905
+South_Street_and_Normal_Boulevard,All Motor Vehicles,Southbound,3,0.9247488616887083,48,9305.574404761905
+South_Street_and_Normal_Boulevard,All Motor Vehicles,Southbound,4,0.8954932816659578,48,9305.574404761905
+South_Street_and_Normal_Boulevard,All Motor Vehicles,Southbound,5,1.1604136210509985,48,9305.574404761905
+South_Street_and_Normal_Boulevard,All Motor Vehicles,Southbound,6,1.3080343546578759,48,9305.574404761905
+South_Street_and_Normal_Boulevard,All Motor Vehicles,Westbound,0,0.9602669885378826,48,5973.880952380951
+South_Street_and_Normal_Boulevard,All Motor Vehicles,Westbound,1,0.9040006233170101,48,5973.880952380951
+South_Street_and_Normal_Boulevard,All Motor Vehicles,Westbound,2,0.8988517297494332,48,5973.880952380951
+South_Street_and_Normal_Boulevard,All Motor Vehicles,Westbound,3,0.8942489325454246,48,5973.880952380951
+South_Street_and_Normal_Boulevard,All Motor Vehicles,Westbound,4,0.9035590943629965,48,5973.880952380951
+South_Street_and_Normal_Boulevard,All Motor Vehicles,Westbound,5,1.2440024021999092,48,5973.880952380951
+South_Street_and_Normal_Boulevard,All Motor Vehicles,Westbound,6,1.4063704906753396,48,5973.880952380951
+South_Street_and_Normal_Boulevard,All Motor Vehicles,Northbound,0,0.9605299351595801,48,8210.169642857143
+South_Street_and_Normal_Boulevard,All Motor Vehicles,Northbound,1,0.9072135960836081,48,8210.169642857143
+South_Street_and_Normal_Boulevard,All Motor Vehicles,Northbound,2,0.9269041806192001,48,8210.169642857143
+South_Street_and_Normal_Boulevard,All Motor Vehicles,Northbound,3,0.9220053643496352,48,8210.169642857143
+South_Street_and_Normal_Boulevard,All Motor Vehicles,Northbound,4,0.8997754326224479,48,8210.169642857143
+South_Street_and_Normal_Boulevard,All Motor Vehicles,Northbound,5,1.1859372763161797,48,8210.169642857143
+South_Street_and_Normal_Boulevard,All Motor Vehicles,Northbound,6,1.353957008964155,48,8210.169642857143
+South_Street_and_Normal_Boulevard,All Motor Vehicles,Eastbound,0,0.9621034841119828,48,6797.2410714285725
+South_Street_and_Normal_Boulevard,All Motor Vehicles,Eastbound,1,0.9036731370201345,48,6797.2410714285725
+South_Street_and_Normal_Boulevard,All Motor Vehicles,Eastbound,2,0.9143399211638226,48,6797.2410714285725
+South_Street_and_Normal_Boulevard,All Motor Vehicles,Eastbound,3,0.9114306705493752,48,6797.2410714285725
+South_Street_and_Normal_Boulevard,All Motor Vehicles,Eastbound,4,0.9171698195797733,48,6797.2410714285725
+South_Street_and_Normal_Boulevard,All Motor Vehicles,Eastbound,5,1.20572349280142,48,6797.2410714285725
+South_Street_and_Normal_Boulevard,All Motor Vehicles,Eastbound,6,1.3450505688219496,48,6797.2410714285725
+South_Street_and_Normal_Boulevard,Lights,Total,0,0.9679710015604246,48,29960.235119047615
+South_Street_and_Normal_Boulevard,Lights,Total,1,0.9132008105979723,48,29960.235119047615
+South_Street_and_Normal_Boulevard,Lights,Total,2,0.9224186653579279,48,29960.235119047615
+South_Street_and_Normal_Boulevard,Lights,Total,3,0.9167437173665278,48,29960.235119047615
+South_Street_and_Normal_Boulevard,Lights,Total,4,0.9044997488658528,48,29960.235119047615
+South_Street_and_Normal_Boulevard,Lights,Total,5,1.1865645243971104,48,29960.235119047615
+South_Street_and_Normal_Boulevard,Lights,Total,6,1.3358531042347808,48,29960.235119047615
+South_Street_and_Normal_Boulevard,Lights,Southbound,0,0.9783395447418392,48,9238.684523809525
+South_Street_and_Normal_Boulevard,Lights,Southbound,1,0.927041638656604,48,9238.684523809525
+South_Street_and_Normal_Boulevard,Lights,Southbound,2,0.9346973101765604,48,9238.684523809525
+South_Street_and_Normal_Boulevard,Lights,Southbound,3,0.9262438820033402,48,9238.684523809525
+South_Street_and_Normal_Boulevard,Lights,Southbound,4,0.8960679444057637,48,9238.684523809525
+South_Street_and_Normal_Boulevard,Lights,Southbound,5,1.1562869464871457,48,9238.684523809525
+South_Street_and_Normal_Boulevard,Lights,Southbound,6,1.3006583324813672,48,9238.684523809525
+South_Street_and_Normal_Boulevard,Lights,Westbound,0,0.9632959163122705,48,5879.175595238095
+South_Street_and_Normal_Boulevard,Lights,Westbound,1,0.9062604083992054,48,5879.175595238095
+South_Street_and_Normal_Boulevard,Lights,Westbound,2,0.9017198108737549,48,5879.175595238095
+South_Street_and_Normal_Boulevard,Lights,Westbound,3,0.8969792270206749,48,5879.175595238095
+South_Street_and_Normal_Boulevard,Lights,Westbound,4,0.9058240629499538,48,5879.175595238095
+South_Street_and_Normal_Boulevard,Lights,Westbound,5,1.2339273924094278,48,5879.175595238095
+South_Street_and_Normal_Boulevard,Lights,Westbound,6,1.3884468241980457,48,5879.175595238095
+South_Street_and_Normal_Boulevard,Lights,Northbound,0,0.961975836858384,48,8147.654761904762
+South_Street_and_Normal_Boulevard,Lights,Northbound,1,0.9087469498056938,48,8147.654761904762
+South_Street_and_Normal_Boulevard,Lights,Northbound,2,0.9282542244435364,48,8147.654761904762
+South_Street_and_Normal_Boulevard,Lights,Northbound,3,0.9229441438513533,48,8147.654761904762
+South_Street_and_Normal_Boulevard,Lights,Northbound,4,0.900853266467253,48,8147.654761904762
+South_Street_and_Normal_Boulevard,Lights,Northbound,5,1.1817686565038001,48,8147.654761904762
+South_Street_and_Normal_Boulevard,Lights,Northbound,6,1.3458438845635194,48,8147.654761904762
+South_Street_and_Normal_Boulevard,Lights,Eastbound,0,0.9652887979903139,48,6694.720238095239
+South_Street_and_Normal_Boulevard,Lights,Eastbound,1,0.9060310747263592,48,6694.720238095239
+South_Street_and_Normal_Boulevard,Lights,Eastbound,2,0.9172629717769758,48,6694.720238095239
+South_Street_and_Normal_Boulevard,Lights,Eastbound,3,0.9140199713533996,48,6694.720238095239
+South_Street_and_Normal_Boulevard,Lights,Eastbound,4,0.9197939462932251,48,6694.720238095239
+South_Street_and_Normal_Boulevard,Lights,Eastbound,5,1.1953701332035276,48,6694.720238095239
+South_Street_and_Normal_Boulevard,Lights,Eastbound,6,1.329262585124061,48,6694.720238095239
+South_Street_and_Normal_Boulevard,Single-Unit Trucks,Total,0,0.8052417688386831,51,196.47899159663868
+South_Street_and_Normal_Boulevard,Single-Unit Trucks,Total,1,0.7854847198736828,51,196.47899159663868
+South_Street_and_Normal_Boulevard,Single-Unit Trucks,Total,2,0.7517200728753618,51,196.47899159663868
+South_Street_and_Normal_Boulevard,Single-Unit Trucks,Total,3,0.7943894538947656,51,196.47899159663868
+South_Street_and_Normal_Boulevard,Single-Unit Trucks,Total,4,0.8191978884424929,51,196.47899159663868
+South_Street_and_Normal_Boulevard,Single-Unit Trucks,Total,5,2.1411172161172165,51,196.47899159663868
+South_Street_and_Normal_Boulevard,Single-Unit Trucks,Total,6,4.8036570332831126,51,196.47899159663868
+South_Street_and_Normal_Boulevard,Single-Unit Trucks,Southbound,0,0.8277989731995665,51,49.22969187675069
+South_Street_and_Normal_Boulevard,Single-Unit Trucks,Southbound,1,0.7819103972950125,51,49.22969187675069
+South_Street_and_Normal_Boulevard,Single-Unit Trucks,Southbound,2,0.7311340377735251,51,49.22969187675069
+South_Street_and_Normal_Boulevard,Single-Unit Trucks,Southbound,3,0.7687428921354211,51,49.22969187675069
+South_Street_and_Normal_Boulevard,Single-Unit Trucks,Southbound,4,0.8302626606198034,51,49.22969187675069
+South_Street_and_Normal_Boulevard,Single-Unit Trucks,Southbound,5,2.1277239709443094,51,49.22969187675069
+South_Street_and_Normal_Boulevard,Single-Unit Trucks,Southbound,6,5.879892940782869,51,49.22969187675069
+South_Street_and_Normal_Boulevard,Single-Unit Trucks,Westbound,0,0.8040920449812579,51,43.26330532212885
+South_Street_and_Normal_Boulevard,Single-Unit Trucks,Westbound,1,0.7997203955884638,51,43.26330532212885
+South_Street_and_Normal_Boulevard,Single-Unit Trucks,Westbound,2,0.7535616705698673,51,43.26330532212885
+South_Street_and_Normal_Boulevard,Single-Unit Trucks,Westbound,3,0.7796567390206967,51,43.26330532212885
+South_Street_and_Normal_Boulevard,Single-Unit Trucks,Westbound,4,0.850261491879989,51,43.26330532212885
+South_Street_and_Normal_Boulevard,Single-Unit Trucks,Westbound,5,2.119527926444353,51,43.26330532212885
+South_Street_and_Normal_Boulevard,Single-Unit Trucks,Westbound,6,4.0263295099061525,51,43.26330532212885
+South_Street_and_Normal_Boulevard,Single-Unit Trucks,Northbound,0,0.7934073107049608,51,47.666666666666664
+South_Street_and_Normal_Boulevard,Single-Unit Trucks,Northbound,1,0.7744504619305511,51,47.666666666666664
+South_Street_and_Normal_Boulevard,Single-Unit Trucks,Northbound,2,0.7683312262958281,51,47.666666666666664
+South_Street_and_Normal_Boulevard,Single-Unit Trucks,Northbound,3,0.8135876840696118,51,47.666666666666664
+South_Street_and_Normal_Boulevard,Single-Unit Trucks,Northbound,4,0.7967879383808587,51,47.666666666666664
+South_Street_and_Normal_Boulevard,Single-Unit Trucks,Northbound,5,2.0377200335289185,51,47.666666666666664
+South_Street_and_Normal_Boulevard,Single-Unit Trucks,Northbound,6,5.815789473684211,51,47.666666666666664
+South_Street_and_Normal_Boulevard,Single-Unit Trucks,Eastbound,0,0.7971928155108837,51,56.319327731092436
+South_Street_and_Normal_Boulevard,Single-Unit Trucks,Eastbound,1,0.787359022556391,51,56.319327731092436
+South_Street_and_Normal_Boulevard,Single-Unit Trucks,Eastbound,2,0.7550698512843623,51,56.319327731092436
+South_Street_and_Normal_Boulevard,Single-Unit Trucks,Eastbound,3,0.8136786726021853,51,56.319327731092436
+South_Street_and_Normal_Boulevard,Single-Unit Trucks,Eastbound,4,0.8063688136680838,51,56.319327731092436
+South_Street_and_Normal_Boulevard,Single-Unit Trucks,Eastbound,5,2.2687880839539605,51,56.319327731092436
+South_Street_and_Normal_Boulevard,Single-Unit Trucks,Eastbound,6,4.144712430426716,51,56.319327731092436
+South_Street_and_Normal_Boulevard,Articulated Trucks,Total,0,0.8469476563471342,51,19.081232492997202
+South_Street_and_Normal_Boulevard,Articulated Trucks,Total,1,0.7810135290071085,51,19.081232492997202
+South_Street_and_Normal_Boulevard,Articulated Trucks,Total,2,0.7474215492648673,51,19.081232492997202
+South_Street_and_Normal_Boulevard,Articulated Trucks,Total,3,0.8310357447846773,51,19.081232492997202
+South_Street_and_Normal_Boulevard,Articulated Trucks,Total,4,0.7766503249344431,51,19.081232492997202
+South_Street_and_Normal_Boulevard,Articulated Trucks,Total,5,2.595047619047619,51,19.081232492997202
+South_Street_and_Normal_Boulevard,Articulated Trucks,Total,6,3.0795660036166366,51,19.081232492997202
+South_Street_and_Normal_Boulevard,Articulated Trucks,Southbound,0,0.8646837033933811,51,5.7815126050420185
+South_Street_and_Normal_Boulevard,Articulated Trucks,Southbound,1,0.8034254573764112,51,5.7815126050420185
+South_Street_and_Normal_Boulevard,Articulated Trucks,Southbound,2,0.6987136086662155,51,5.7815126050420185
+South_Street_and_Normal_Boulevard,Articulated Trucks,Southbound,3,0.7334754797441367,51,5.7815126050420185
+South_Street_and_Normal_Boulevard,Articulated Trucks,Southbound,4,0.9301487156376749,51,5.7815126050420185
+South_Street_and_Normal_Boulevard,Articulated Trucks,Southbound,5,2.5864661654135346,51,5.7815126050420185
+South_Street_and_Normal_Boulevard,Articulated Trucks,Southbound,6,2.9193776520509203,51,5.7815126050420185
+South_Street_and_Normal_Boulevard,Articulated Trucks,Westbound,0,0.8945260347129507,51,3.7535014005602245
+South_Street_and_Normal_Boulevard,Articulated Trucks,Westbound,1,0.7507002801120449,51,3.7535014005602245
+South_Street_and_Normal_Boulevard,Articulated Trucks,Westbound,2,0.6511175898931002,51,3.7535014005602245
+South_Street_and_Normal_Boulevard,Articulated Trucks,Westbound,3,0.8432976714915041,51,3.7535014005602245
+South_Street_and_Normal_Boulevard,Articulated Trucks,Westbound,4,0.8286951144094002,51,3.7535014005602245
+South_Street_and_Normal_Boulevard,Articulated Trucks,Westbound,5,2.126984126984127,51,3.7535014005602245
+South_Street_and_Normal_Boulevard,Articulated Trucks,Westbound,6,6.600985221674877,51,3.7535014005602245
+South_Street_and_Normal_Boulevard,Articulated Trucks,Northbound,0,0.9271924986210701,51,4.708683473389356
+South_Street_and_Normal_Boulevard,Articulated Trucks,Northbound,1,0.6543402101985208,51,4.708683473389356
+South_Street_and_Normal_Boulevard,Articulated Trucks,Northbound,2,0.9165757906215922,51,4.708683473389356
+South_Street_and_Normal_Boulevard,Articulated Trucks,Northbound,3,0.9923258559622197,51,4.708683473389356
+South_Street_and_Normal_Boulevard,Articulated Trucks,Northbound,4,0.6141761052246987,51,4.708683473389356
+South_Street_and_Normal_Boulevard,Articulated Trucks,Northbound,5,2.8252100840336136,51,4.708683473389356
+South_Street_and_Normal_Boulevard,Articulated Trucks,Northbound,6,3.2019047619047623,51,4.708683473389356
+South_Street_and_Normal_Boulevard,Articulated Trucks,Eastbound,0,0.7364605543710021,51,4.837535014005603
+South_Street_and_Normal_Boulevard,Articulated Trucks,Eastbound,1,0.9599777654252363,51,4.837535014005603
+South_Street_and_Normal_Boulevard,Articulated Trucks,Eastbound,2,0.7614638447971781,51,4.837535014005603
+South_Street_and_Normal_Boulevard,Articulated Trucks,Eastbound,3,0.8223809523809524,51,4.837535014005603
+South_Street_and_Normal_Boulevard,Articulated Trucks,Eastbound,4,0.7857142857142857,51,4.837535014005603
+South_Street_and_Normal_Boulevard,Articulated Trucks,Eastbound,5,2.8687707641196014,51,4.837535014005603
+South_Street_and_Normal_Boulevard,Articulated Trucks,Eastbound,6,2.2226512226512227,51,4.837535014005603
+South_Street_and_Normal_Boulevard,Buses,Total,0,0.7845602176242685,51,106.63865546218489
+South_Street_and_Normal_Boulevard,Buses,Total,1,0.7497341368309112,51,106.63865546218489
+South_Street_and_Normal_Boulevard,Buses,Total,2,0.7629870129870131,51,106.63865546218489
+South_Street_and_Normal_Boulevard,Buses,Total,3,0.724466688233839,51,106.63865546218489
+South_Street_and_Normal_Boulevard,Buses,Total,4,0.7356379586867887,51,106.63865546218489
+South_Street_and_Normal_Boulevard,Buses,Total,5,3.405492441184364,51,106.63865546218489
+South_Street_and_Normal_Boulevard,Buses,Total,6,20.99834528405957,51,106.63865546218489
+South_Street_and_Normal_Boulevard,Buses,Southbound,0,0.8311129329780692,51,11.358543417366946
+South_Street_and_Normal_Boulevard,Buses,Southbound,1,0.7723809523809523,51,11.358543417366946
+South_Street_and_Normal_Boulevard,Buses,Southbound,2,0.744583180315828,51,11.358543417366946
+South_Street_and_Normal_Boulevard,Buses,Southbound,3,0.7169377652050919,51,11.358543417366946
+South_Street_and_Normal_Boulevard,Buses,Southbound,4,0.7342024262176352,51,11.358543417366946
+South_Street_and_Normal_Boulevard,Buses,Southbound,5,3.148291925465838,51,11.358543417366946
+South_Street_and_Normal_Boulevard,Buses,Southbound,6,11.822157434402332,51,11.358543417366946
+South_Street_and_Normal_Boulevard,Buses,Westbound,0,0.7818873306394106,51,46.070028011204485
+South_Street_and_Normal_Boulevard,Buses,Westbound,1,0.7655820881627334,51,46.070028011204485
+South_Street_and_Normal_Boulevard,Buses,Westbound,2,0.7584155676473302,51,46.070028011204485
+South_Street_and_Normal_Boulevard,Buses,Westbound,3,0.730134067300009,51,46.070028011204485
+South_Street_and_Normal_Boulevard,Buses,Westbound,4,0.7330956095386674,51,46.070028011204485
+South_Street_and_Normal_Boulevard,Buses,Westbound,5,3.1580261136712755,51,46.070028011204485
+South_Street_and_Normal_Boulevard,Buses,Westbound,6,21.75529100529101,51,46.070028011204485
+South_Street_and_Normal_Boulevard,Buses,Northbound,0,0.7820157189089229,51,9.476190476190476
+South_Street_and_Normal_Boulevard,Buses,Northbound,1,0.6994004548273725,51,9.476190476190476
+South_Street_and_Normal_Boulevard,Buses,Northbound,2,0.788394313679795,51,9.476190476190476
+South_Street_and_Normal_Boulevard,Buses,Northbound,3,0.7516107531659632,51,9.476190476190476
+South_Street_and_Normal_Boulevard,Buses,Northbound,4,0.7634845407357257,51,9.476190476190476
+South_Street_and_Normal_Boulevard,Buses,Northbound,5,3.0017746228926354,51,9.476190476190476
+South_Street_and_Normal_Boulevard,Buses,Northbound,6,20.136904761904763,51,9.476190476190476
+South_Street_and_Normal_Boulevard,Buses,Eastbound,0,0.775814920148764,51,39.73389355742297
+South_Street_and_Normal_Boulevard,Buses,Eastbound,1,0.7384943773427738,51,39.73389355742297
+South_Street_and_Normal_Boulevard,Buses,Eastbound,2,0.76787744275429,51,39.73389355742297
+South_Street_and_Normal_Boulevard,Buses,Eastbound,3,0.7140340279875164,51,39.73389355742297
+South_Street_and_Normal_Boulevard,Buses,Eastbound,4,0.7326205970457597,51,39.73389355742297
+South_Street_and_Normal_Boulevard,Buses,Eastbound,5,3.9890326209223845,51,39.73389355742297
+South_Street_and_Normal_Boulevard,Buses,Eastbound,6,25.979853479853478,51,39.73389355742297
+South_Street_and_Normal_Boulevard,Motorized Vehicles,Total,0,,51,0.0
+South_Street_and_Normal_Boulevard,Motorized Vehicles,Total,1,,51,0.0
+South_Street_and_Normal_Boulevard,Motorized Vehicles,Total,2,,51,0.0
+South_Street_and_Normal_Boulevard,Motorized Vehicles,Total,3,,51,0.0
+South_Street_and_Normal_Boulevard,Motorized Vehicles,Total,4,,51,0.0
+South_Street_and_Normal_Boulevard,Motorized Vehicles,Total,5,,51,0.0
+South_Street_and_Normal_Boulevard,Motorized Vehicles,Total,6,,51,0.0
+South_Street_and_Normal_Boulevard,Motorized Vehicles,Southbound,0,,51,0.0
+South_Street_and_Normal_Boulevard,Motorized Vehicles,Southbound,1,,51,0.0
+South_Street_and_Normal_Boulevard,Motorized Vehicles,Southbound,2,,51,0.0
+South_Street_and_Normal_Boulevard,Motorized Vehicles,Southbound,3,,51,0.0
+South_Street_and_Normal_Boulevard,Motorized Vehicles,Southbound,4,,51,0.0
+South_Street_and_Normal_Boulevard,Motorized Vehicles,Southbound,5,,51,0.0
+South_Street_and_Normal_Boulevard,Motorized Vehicles,Southbound,6,,51,0.0
+South_Street_and_Normal_Boulevard,Motorized Vehicles,Westbound,0,,51,0.0
+South_Street_and_Normal_Boulevard,Motorized Vehicles,Westbound,1,,51,0.0
+South_Street_and_Normal_Boulevard,Motorized Vehicles,Westbound,2,,51,0.0
+South_Street_and_Normal_Boulevard,Motorized Vehicles,Westbound,3,,51,0.0
+South_Street_and_Normal_Boulevard,Motorized Vehicles,Westbound,4,,51,0.0
+South_Street_and_Normal_Boulevard,Motorized Vehicles,Westbound,5,,51,0.0
+South_Street_and_Normal_Boulevard,Motorized Vehicles,Westbound,6,,51,0.0
+South_Street_and_Normal_Boulevard,Motorized Vehicles,Northbound,0,,51,0.0
+South_Street_and_Normal_Boulevard,Motorized Vehicles,Northbound,1,,51,0.0
+South_Street_and_Normal_Boulevard,Motorized Vehicles,Northbound,2,,51,0.0
+South_Street_and_Normal_Boulevard,Motorized Vehicles,Northbound,3,,51,0.0
+South_Street_and_Normal_Boulevard,Motorized Vehicles,Northbound,4,,51,0.0
+South_Street_and_Normal_Boulevard,Motorized Vehicles,Northbound,5,,51,0.0
+South_Street_and_Normal_Boulevard,Motorized Vehicles,Northbound,6,,51,0.0
+South_Street_and_Normal_Boulevard,Motorized Vehicles,Eastbound,0,,51,0.0
+South_Street_and_Normal_Boulevard,Motorized Vehicles,Eastbound,1,,51,0.0
+South_Street_and_Normal_Boulevard,Motorized Vehicles,Eastbound,2,,51,0.0
+South_Street_and_Normal_Boulevard,Motorized Vehicles,Eastbound,3,,51,0.0
+South_Street_and_Normal_Boulevard,Motorized Vehicles,Eastbound,4,,51,0.0
+South_Street_and_Normal_Boulevard,Motorized Vehicles,Eastbound,5,,51,0.0
+South_Street_and_Normal_Boulevard,Motorized Vehicles,Eastbound,6,,51,0.0
