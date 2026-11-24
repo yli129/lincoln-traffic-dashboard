@@ -5,16 +5,14 @@ import pandas as pd
 # Put this Python file in the same folder as the CSV files.
 # __file__：the location of Python file
 # .parent：the location of Python file folder
-data_folder = Path(__file__).parent
+project_folder = Path(__file__).resolve().parent.parent
 
 # The current project keeps original files and reports in separate folders.
 # Fall back to the script folder so the checker also works with the old layout.
-raw_data_folder = data_folder / "raw_data"
-if not raw_data_folder.exists():
-    raw_data_folder = data_folder
+raw_data_folder = project_folder / "raw_data"
 
-report_folder = data_folder / "data_quality_reports"
-report_folder.mkdir(exist_ok=True)
+report_folder = project_folder / "outputs"
+report_folder.mkdir(parents=True, exist_ok=True)
 
 # 7 sections 
 sections = [
