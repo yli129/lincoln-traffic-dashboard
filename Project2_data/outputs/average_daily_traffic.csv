@@ -1,0 +1,76 @@
+Location,Measure_Group,Measure,ADT,Valid_Days,Total_Observed_Volume
+40th Street & Normal Boulevard,Direction and turn,Eastbound Left,84.54189944134079,358,30266
+40th Street & Normal Boulevard,Direction and turn,Eastbound Right,2179.891061452514,358,780401
+40th Street & Normal Boulevard,Direction and turn,Eastbound Thru,7032.703910614525,358,2517708
+40th Street & Normal Boulevard,Direction and turn,Eastbound U-Turn,1.7597765363128492,358,630
+40th Street & Normal Boulevard,Direction and turn,Northbound Left,1630.782122905028,358,583820
+40th Street & Normal Boulevard,Direction and turn,Northbound Right,333.19832402234636,358,119285
+40th Street & Normal Boulevard,Direction and turn,Northbound Thru,3573.0223463687153,358,1279142
+40th Street & Normal Boulevard,Direction and turn,Northbound U-Turn,0.0,358,0
+40th Street & Normal Boulevard,Direction and turn,Southbound Left,382.7877094972067,358,137038
+40th Street & Normal Boulevard,Direction and turn,Southbound Right,59.45530726256983,358,21285
+40th Street & Normal Boulevard,Direction and turn,Southbound Thru,3291.91061452514,358,1178504
+40th Street & Normal Boulevard,Direction and turn,Southbound U-Turn,0.0223463687150838,358,8
+40th Street & Normal Boulevard,Direction and turn,Westbound Left,429.804469273743,358,153870
+40th Street & Normal Boulevard,Direction and turn,Westbound Right,410.12849162011173,358,146826
+40th Street & Normal Boulevard,Direction and turn,Westbound Thru,6482.497206703911,358,2320734
+40th Street & Normal Boulevard,Direction and turn,Westbound U-Turn,5.835195530726257,358,2089
+40th Street & Normal Boulevard,Direction total,Eastbound Total,9298.896648044692,358,3329005
+40th Street & Normal Boulevard,Direction total,Northbound Total,5537.002793296089,358,1982247
+40th Street & Normal Boulevard,Direction total,Southbound Total,3734.1759776536314,358,1336835
+40th Street & Normal Boulevard,Direction total,Westbound Total,7328.265363128492,358,2623519
+40th Street & Normal Boulevard,Overall total,Total Motor Vehicles,25898.340782122905,358,9271606
+40th Street & Normal Boulevard,Turn total,All Left Turns,2527.9162011173185,358,904994
+40th Street & Normal Boulevard,Turn total,All Right Turns,2982.6731843575417,358,1067797
+40th Street & Normal Boulevard,Turn total,All Thru Turns,20380.13407821229,358,7296088
+40th Street & Normal Boulevard,Turn total,All U-Turn Turns,7.61731843575419,358,2727
+40th Street & South Street,Direction and turn,Eastbound Left,612.4542936288088,361,221096
+40th Street & South Street,Direction and turn,Eastbound Right,48.2797783933518,361,17429
+40th Street & South Street,Direction and turn,Eastbound Thru,5080.822714681441,361,1834177
+40th Street & South Street,Direction and turn,Eastbound U-Turn,0.0,361,0
+40th Street & South Street,Direction and turn,Northbound Left,219.4016620498615,361,79204
+40th Street & South Street,Direction and turn,Northbound Right,1206.8781163434903,361,435683
+40th Street & South Street,Direction and turn,Northbound Thru,2603.7091412742384,361,939939
+40th Street & South Street,Direction and turn,Northbound U-Turn,0.0,361,0
+40th Street & South Street,Direction and turn,Southbound Left,344.43490304709144,361,124341
+40th Street & South Street,Direction and turn,Southbound Right,734.0803324099722,361,265003
+40th Street & South Street,Direction and turn,Southbound Thru,2417.97783933518,361,872890
+40th Street & South Street,Direction and turn,Southbound U-Turn,0.0,361,0
+40th Street & South Street,Direction and turn,Westbound Left,1097.5235457063711,361,396206
+40th Street & South Street,Direction and turn,Westbound Right,320.2493074792244,361,115610
+40th Street & South Street,Direction and turn,Westbound Thru,5055.263157894737,361,1824950
+40th Street & South Street,Direction and turn,Westbound U-Turn,0.0,361,0
+40th Street & South Street,Direction total,Eastbound Total,5741.556786703601,361,2072702
+40th Street & South Street,Direction total,Northbound Total,4029.98891966759,361,1454826
+40th Street & South Street,Direction total,Southbound Total,3496.493074792244,361,1262234
+40th Street & South Street,Direction total,Westbound Total,6473.036011080332,361,2336766
+40th Street & South Street,Overall total,Total Motor Vehicles,19741.074792243766,361,7126528
+40th Street & South Street,Turn total,All Left Turns,2273.814404432133,361,820847
+40th Street & South Street,Turn total,All Right Turns,2309.4875346260387,361,833725
+40th Street & South Street,Turn total,All Thru Turns,15157.772853185596,361,5471956
+40th Street & South Street,Turn total,All U-Turn Turns,0.0,361,0
+South Street & Normal Boulevard,Direction and turn,Eastbound Left,514.3361344537815,357,183618
+South Street & Normal Boulevard,Direction and turn,Eastbound Right,1513.501400560224,357,540320
+South Street & Normal Boulevard,Direction and turn,Eastbound Thru,4727.764705882353,357,1687812
+South Street & Normal Boulevard,Direction and turn,Eastbound U-Turn,8.854341736694678,357,3161
+South Street & Normal Boulevard,Direction and turn,Northbound Left,1206.4285714285713,357,430695
+South Street & Normal Boulevard,Direction and turn,Northbound Right,28.26890756302521,357,10092
+South Street & Normal Boulevard,Direction and turn,Northbound Thru,6945.862745098039,357,2479673
+South Street & Normal Boulevard,Direction and turn,Northbound U-Turn,0.23529411764705882,357,84
+South Street & Normal Boulevard,Direction and turn,Southbound Left,1028.7591036414565,357,367267
+South Street & Normal Boulevard,Direction and turn,Southbound Right,325.02521008403363,357,116034
+South Street & Normal Boulevard,Direction and turn,Southbound Thru,7913.9467787114845,357,2825279
+South Street & Normal Boulevard,Direction and turn,Southbound U-Turn,1.2633053221288515,357,451
+South Street & Normal Boulevard,Direction and turn,Westbound Left,52.72829131652661,357,18824
+South Street & Normal Boulevard,Direction and turn,Westbound Right,1441.09243697479,357,514470
+South Street & Normal Boulevard,Direction and turn,Westbound Thru,4411.658263305322,357,1574962
+South Street & Normal Boulevard,Direction and turn,Westbound U-Turn,0.24929971988795518,357,89
+South Street & Normal Boulevard,Direction total,Eastbound Total,6764.456582633054,357,2414911
+South Street & Normal Boulevard,Direction total,Northbound Total,8180.795518207283,357,2920544
+South Street & Normal Boulevard,Direction total,Southbound Total,9268.994397759103,357,3309031
+South Street & Normal Boulevard,Direction total,Westbound Total,5905.728291316526,357,2108345
+South Street & Normal Boulevard,Overall total,Total Motor Vehicles,30119.974789915967,357,10752831
+South Street & Normal Boulevard,Turn total,All Left Turns,2802.252100840336,357,1000404
+South Street & Normal Boulevard,Turn total,All Right Turns,3307.887955182073,357,1180916
+South Street & Normal Boulevard,Turn total,All Thru Turns,23999.2324929972,357,8567726
+South Street & Normal Boulevard,Turn total,All U-Turn Turns,10.602240896358543,357,3785

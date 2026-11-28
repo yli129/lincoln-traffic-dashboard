@@ -1,0 +1,4 @@
+Location,CSV_Files,Calendar_Year,Total_Dates,Valid_Dates,Excluded_Dates,Excluded_Date_List,Valid_Rows,Partial_Zero_Rows,All_Zero_Day_Rows
+40th Street & Normal Boulevard,5,2025,365,358,7,"2025-07-16, 2025-07-17, 2025-07-18, 2025-07-19, 2025-07-20, 2025-07-21, 2025-10-20",174693,123,384
+40th Street & South Street,5,2025,365,361,4,"2025-07-07, 2025-07-08, 2025-10-20, 2025-11-24",175176,24,0
+South Street & Normal Boulevard,5,2025,365,357,8,"2025-07-29, 2025-07-30, 2025-07-31, 2025-08-01, 2025-08-02, 2025-08-03, 2025-08-04, 2025-10-20",174615,105,480
